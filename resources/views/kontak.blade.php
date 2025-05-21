@@ -3,7 +3,7 @@
 @section('title', 'kontak')
 
     
-@sesction('content')    
+@section('content')    
     <section class="contact" id="kontak">
         <div class="container">
             <div class="section-title">
