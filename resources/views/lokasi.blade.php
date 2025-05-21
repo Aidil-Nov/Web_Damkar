@@ -1,3 +1,9 @@
+@extends('layouts.app')
+
+@section('title', 'Lokasi')
+
+@section('content')
+   
    <section class="locations" id="lokasi">
         <div class="container">
             <div class="section-title">
@@ -43,3 +49,4 @@
             </div>
         </div>
     </section>
+@endsesction

@@ -1,3 +1,8 @@
+@extend('layouts.app')
+
+@section('title' ,'galeri')
+
+@section('content')
     <section class="gallery" id="galeri">
         <div class="container">
             <div class="section-title">
@@ -39,3 +44,4 @@
             </div>
         </div>
     </section>
+@endsesction
