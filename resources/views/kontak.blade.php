@@ -8,7 +8,7 @@
         <div class="container">
             <div class="section-title">
                 <h2>Hubungi Kami</h2>
-            </div>
+            </div> 
             <div class="contact-content">
                 <div class="contact-info">
                     <h3>Informasi Kontak</h3>
