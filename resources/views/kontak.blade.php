@@ -1,8 +1,14 @@
+@extends('layouts.app')
+
+@section('title', 'kontak')
+
+    
+@sesction('content')    
     <section class="contact" id="kontak">
         <div class="container">
             <div class="section-title">
                 <h2>Hubungi Kami</h2>
-            </div>
+            </div> 
             <div class="contact-content">
                 <div class="contact-info">
                     <h3>Informasi Kontak</h3>
@@ -38,3 +44,4 @@
             </div>
         </div>
     </section>
+@endsesction
