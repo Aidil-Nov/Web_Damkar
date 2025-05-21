@@ -1,11 +1,11 @@
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-column">
+        <div class="">
+            <div class="">
+                <div class="">
                     <h3>Tentang Kami</h3>
                     <p>Dinas Pemadam Kebakaran hadir untuk melindungi keselamatan dan properti masyarakat dari bahaya kebakaran dan bencana lainnya.</p>
                 </div>
-                <div class="footer-column">
+                <div class="">
                     <h3>Tautan Cepat</h3>
                     <ul>
                         <li><a href="#beranda">Beranda</a></li>
