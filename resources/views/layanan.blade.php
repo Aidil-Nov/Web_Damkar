@@ -8,7 +8,10 @@
 
             <!-- Judul -->
             <div class="text-center mb-12">
-                <h2 class="text-3xl sm:text-4xl font-bold text-red-600">Layanan Kami</h2>
+                <h2 class="text-3xl font-bold text-blue-900 inline-block pb-2 relative">
+                    Layanan
+                    <span class="absolute bottom-0 left-1/4 w-1/2 h-1 bg-red-600"></span>
+                </h2>
             </div>
 
             <!-- Grid Layanan -->

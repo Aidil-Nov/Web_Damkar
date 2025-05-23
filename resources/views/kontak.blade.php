@@ -4,9 +4,13 @@
 
 @section('content')
     <section class="bg-white py-12 px-4 md:px-8 lg:px-16" id="kontak">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-blue-900 inline-block pb-2 relative">
+                Kontak Kami
+                <span class="absolute bottom-0 left-1/4 w-1/2 h-1 bg-red-600"></span>
+            </h2>
+        </div>
         <div class="max-w-7xl mx-auto">
-            <h2 class="text-3xl font-bold text-red-600 mb-8 text-center">Hubungi Kami</h2>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- Info Kontak -->
                 <div class="space-y-4">

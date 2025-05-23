@@ -4,7 +4,7 @@
 
 
 @section('content')
-    <section class="h-screen flex items-center">
+    <section class="h-screen flex items-center bg-[url(/assets/images/background.jpeg)]">
         <div class="max mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="text-3xl sm:text-4xl font-bold mb-4">
                 Siap Siaga, Cepat Tanggap, Melindungi Masyarakat
@@ -19,5 +19,7 @@
             </a>
         </div>
     </section>
+    <x-lokasi></x-lokasi>
+    <x-layanan></x-layanan>
 
 @endsection
