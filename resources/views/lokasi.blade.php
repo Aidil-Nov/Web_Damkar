@@ -2,7 +2,7 @@
 
 @section('title', 'Lokasi')
 
-@section('Lokasi')
+@section('content')
 
     <section class="bg-white py-12 px-4 md:px-8 lg:px-16">
         <div class="max-w-7xl mx-auto">
