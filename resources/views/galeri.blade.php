@@ -1,8 +1,8 @@
 @extend('layouts.app')
 
-@section('title' ,'galeri')
+@section('title' ,'Galeri')
 
-@section('content')
+@section('Galeri')
     <section class="gallery" id="galeri">
         <div class="container">
             <div class="section-title">
