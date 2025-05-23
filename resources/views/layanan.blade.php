@@ -2,7 +2,7 @@
 
 @section('title', 'Layanan')
 
-@section('Layanan')
+@section('content')
     <section class="bg-white py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
