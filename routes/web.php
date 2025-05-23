@@ -1,28 +1,23 @@
 <?php
-
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('layouts.app');
-});
-
 Route::get('/home', function () {
-    return view('Home');
+    return view('home');
 })->name('Home');
 
-Route::get('/kontak', function () {
-    return view('Kontak');
-})->name('Kontak');
+Route::get('/layanan', function () {
+    return view('layanan');
+})->name('Layanan');
 
 Route::get('/lokasi', function () {
-    return view('Lokasi');
+    return view('lokasi');
 })->name('Lokasi');
-
-Route::get('/layanan', function () {
-    return view('Layanan');
-})->name('Layanan');
 
 Route::get('/galeri', function () {
     return view('galeri');
 })->name('Galeri');
+
+Route::get('/kontak', function () {
+    return view('kontak');
+})->name('Kontak');
 
