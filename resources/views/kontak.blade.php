@@ -2,7 +2,7 @@
 
 @section('title', 'Kontak')
 
-@section('Kontak')
+@section('content')
     <section class="bg-white py-12 px-4 md:px-8 lg:px-16" id="kontak">
         <div class="max-w-7xl mx-auto">
             <h2 class="text-3xl font-bold text-red-600 mb-8 text-center">Hubungi Kami</h2>

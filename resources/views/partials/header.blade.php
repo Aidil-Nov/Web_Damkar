@@ -11,7 +11,7 @@
       <!-- Navigation Menu -->
       <nav class="w-full md:w-auto">
         <ul class="flex flex-wrap justify-center md:justify-end gap-4 md:gap-6 text-sm md:text-base">
-          <li><a href="#home" class="block p-2 rounded hover:bg-red-800 transition">Beranda</a></li>
+          <li><a href="{{ route('Home') }}" class="block p-2 rounded hover:bg-red-800 transition">Beranda</a></li>
           <li><a href="{{ route('Layanan') }}" class="block p-2 rounded hover:bg-red-800 transition">Layanan</a></li>
           <li><a href="{{ route('Lokasi') }}" class="block p-2 rounded hover:bg-red-800 transition">Lokasi</a></li>
           <li><a href="{{ route('Galeri') }}" class="block p-2 rounded hover:bg-red-800 transition">Galeri</a></li>

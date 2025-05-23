@@ -12,9 +12,8 @@
         @include('partials.header')
 
         <div>
-            @yield('Kontak')
+            @yield('content')
         </div>
-        <x-lokasi></x-lokasi>
 
         @include('partials.footer')
     </body>

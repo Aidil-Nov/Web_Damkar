@@ -1,6 +1,6 @@
-@extend('layouts.app')
+@extends('layouts.app')
 
-@section('title' ,'Galeri')
+@section('title', 'Galeri')
 
 @section('Galeri')
     <section class="gallery" id="galeri">
@@ -44,4 +44,4 @@
             </div>
         </div>
     </section>
-@endsesction
+@endsection

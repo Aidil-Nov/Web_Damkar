@@ -23,6 +23,6 @@ Route::get('/layanan', function () {
 })->name('Layanan');
 
 Route::get('/galeri', function () {
-    return view('Galeri');
+    return view('galeri');
 })->name('Galeri');
 
