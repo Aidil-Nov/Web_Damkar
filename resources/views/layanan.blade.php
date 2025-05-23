@@ -20,7 +20,7 @@
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-red-700 mb-2">Pemadaman Kebakaran</h3>
                         <p class="text-gray-700">Tim kami terlatih untuk menangani berbagai jenis kebakaran dengan peralatan
-                            modern dan respons cepat untuk meminimalisir kerugian.</p>
+                            modern dan respons cepat untuk meminimalisir kerugian. Kami juga menangani rescue binatang buas </p>
                     </div>
                 </div>
 

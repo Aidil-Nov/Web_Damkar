@@ -11,7 +11,7 @@
                 <!-- Info Kontak -->
                 <div class="space-y-4">
                     <h3 class="text-xl font-semibold text-gray-800">Informasi Kontak</h3>
-                    <p class="flex items-center gap-2"><span>📍</span> Jl. Panglima Sudirman No. 123, Kota Jakarta</p>
+                    <p class="flex items-center gap-2"><span>📍</span>  Jl. Prof. M. Yamin - Jl. Kurnia</p>
                     <p class="flex items-center gap-2"><span>📞</span> Nomor Darurat: 113</p>
                     <p class="flex items-center gap-2"><span>📞</span> Kantor: (021) 5551234</p>
                     <p class="flex items-center gap-2"><span>✉️</span> info@damkar.go.id</p>
