@@ -33,8 +33,7 @@
 
             <!-- Kartu Layanan 3 -->
             <div class="bg-white shadow-md hover:shadow-xl transition rounded-lg overflow-hidden">
-                <div class="h-48 bg-cover bg-center"
-                    style="background-image: url('/assets/images/pembersihan saluran air 3.jpg');"></div>
+                <div class="h-48 bg-cover bg-center" style="background-image: url('/assets/images/pembersihan saluran air 3.jpg');"></div>
                 <div class="p-6">
                     <h3 class="text-xl font-semibold text-red-700 mb-2">Pencegahan dan Edukasi</h3>
                     <p class="text-gray-700">Program-program edukasi dan pelatihan untuk masyarakat tentang cara
