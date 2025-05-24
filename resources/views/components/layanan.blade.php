@@ -1,5 +1,5 @@
 <section class="bg-white py-16">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <!-- Judul -->
         <div class="text-center mb-12">
@@ -33,7 +33,7 @@
 
             <!-- Kartu Layanan 3 -->
             <div class="bg-white shadow-md hover:shadow-xl transition rounded-lg overflow-hidden">
-                <div class="h-48 bg-cover bg-center" style="background-image: url('/assets/images/TKK lahan kobar ujung2.jpg');"></div>
+                <div class="h-48 bg-cover bg-center" style="background-image: url('/assets/images/pembersihan saluran air 3.jpg');"></div>
                 <div class="p-6">
                     <h3 class="text-xl font-semibold text-red-700 mb-2">Pencegahan dan Edukasi</h3>
                     <p class="text-gray-700">Program-program edukasi dan pelatihan untuk masyarakat tentang cara

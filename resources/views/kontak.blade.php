@@ -22,7 +22,7 @@
                 </div>
 
                 <!-- Form Kontak -->
-                <div class="p-6 rounded-md">
+                <div>
                     <h3 class="text-lg font-semibold mb-4">Kirim Pesan</h3>
                     <form>
                         <div class="mb-4">
