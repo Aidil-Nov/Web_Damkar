@@ -3,51 +3,26 @@
 @section('title', 'Layanan')
 
 @section('content')
-    <section class="bg-white py-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section class="bg-white py-12 px-4 md:px-8 lg:px-16">
 
-            <!-- Judul -->
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-blue-900 inline-block pb-2 relative">
-                    Layanan
-                    <span class="absolute bottom-0 left-1/4 w-1/2 h-1 bg-red-600"></span>
-                </h2>
+        <div class="h-full grid grid-cols-2 grid-rows-2 gap-8 mb-12 pt-12">
+            <div class="row-span-2">
+                <div class="bg-cover bg-center rounded-2xl h-full"
+                    style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/assets/images/1.jpeg');">
+                    <p class="text-white text-5xl p-8 font-sec">Tim kami terlatih untuk menangani berbagai jenis kebakaran.
+                    </p>
+
+                    <button class="btn-red ml-8">Kaka Anjing?</button>
+                </div>
             </div>
-
-            <!-- Grid Layanan -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-
-                <!-- Kartu Layanan 1 -->
-                <div class="bg-white shadow-md hover:shadow-xl transition rounded-lg overflow-hidden">
-                    <div class="h-48 bg-cover bg-center" style="background-image: url('/assets/images/logo.jpeg');"></div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-red-700 mb-2">Pemadaman Kebakaran</h3>
-                        <p class="text-gray-700">Tim kami terlatih untuk menangani berbagai jenis kebakaran dengan peralatan
-                            modern dan respons cepat untuk meminimalisir kerugian. Kami juga menangani rescue binatang buas
-                        </p>
-                    </div>
+            <div>
+                <div class="bg-cover bg-center rounded-2xl h-full"
+                    style="background-image: url('/assets/images/anggota.jpg');">
                 </div>
-
-                <!-- Kartu Layanan 2 -->
-                <div class="bg-white shadow-md hover:shadow-xl transition rounded-lg overflow-hidden">
-                    <div class="h-48 bg-cover bg-center" style="background-image: url('/api/placeholder/400/200');"></div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-red-700 mb-2">Penyelamatan dan Evakuasi</h3>
-                        <p class="text-gray-700">Layanan penyelamatan dan evakuasi untuk situasi darurat seperti bencana
-                            alam, kecelakaan, atau kondisi berbahaya lainnya.</p>
-                    </div>
+            </div>
+            <div class="col-start-2">
+                <div class="bg-cover bg-center rounded-2xl h-full" style="background-image: url('/assets/images/1.jpeg');">
                 </div>
-
-                <!-- Kartu Layanan 3 -->
-                <div class="bg-white shadow-md hover:shadow-xl transition rounded-lg overflow-hidden">
-                    <div class="h-48 bg-cover bg-center" style="background-image: url('/api/placeholder/400/200');"></div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-red-700 mb-2">Pencegahan dan Edukasi</h3>
-                        <p class="text-gray-700">Program-program edukasi dan pelatihan untuk masyarakat tentang cara
-                            mencegah kebakaran dan penanganan kondisi darurat.</p>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>

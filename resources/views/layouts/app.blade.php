@@ -13,9 +13,9 @@
     <body class="font-display h-full bg-no-repeat bg-cover bg-center">
         @include('partials.header')
 
-        <div>
+        <main>
             @yield('content')
-        </div>
+        </main>
 
         @include('partials.footer')
     </body>

@@ -4,7 +4,7 @@
 
 @section('content')
     <section class="bg-white py-12 px-4 md:px-8 lg:px-16" id="kontak">
-        <div class="text-center mb-12">
+        <div class="text-center mb-12 pt-12">
             <h2 class="text-3xl font-bold text-blue-900 inline-block pb-2 relative">
                 Kontak Kami
                 <span class="absolute bottom-0 left-1/4 w-1/2 h-1 bg-red-600"></span>
