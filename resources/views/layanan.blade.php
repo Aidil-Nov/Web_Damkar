@@ -19,11 +19,12 @@
 
                 <!-- Kartu Layanan 1 -->
                 <div class="bg-white shadow-md hover:shadow-xl transition rounded-lg overflow-hidden">
-                    <div class="h-48 bg-cover bg-center" style="background-image: url('/api/placeholder/400/200');"></div>
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('/assets/images/logo.jpeg');"></div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-red-700 mb-2">Pemadaman Kebakaran</h3>
                         <p class="text-gray-700">Tim kami terlatih untuk menangani berbagai jenis kebakaran dengan peralatan
-                            modern dan respons cepat untuk meminimalisir kerugian. Kami juga menangani rescue binatang buas </p>
+                            modern dan respons cepat untuk meminimalisir kerugian. Kami juga menangani rescue binatang buas
+                        </p>
                     </div>
                 </div>
 
