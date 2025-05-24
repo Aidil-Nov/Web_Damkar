@@ -8,15 +8,20 @@
         <!-- Desktop Navigation -->
         <nav class="hidden md:block bg-white rounded-full shadow px-6 py-3">
             <ul class="flex items-center space-x-1 font-medium text-sm">
-                <li><a href="#" class="text-black px-4 py-2 rounded-full  hover:bg-red-700 hover:text-white">Beranda</a></li>
+                <li><a href="{{ route('Home') }}"
+                        class="text-black px-4 py-2 rounded-full  hover:bg-red-700 hover:text-white">Beranda</a></li>
                 <li>
-                    <a href="#" class=" text-black px-4 py-2 rounded-full  hover:bg-red-700 hover:text-white">
+                    <a href="{{ route('Layanan') }}"
+                        class=" text-black px-4 py-2 rounded-full  hover:bg-red-700 hover:text-white">
                         Layanan
                     </a>
                 </li>
-                <li><a href="#" class="text-black px-4 py-2 rounded-full  hover:bg-red-700 hover:text-white">Lokasi</a></li>
-                <li><a href="#" class="text-black px-4 py-2 rounded-full  hover:bg-red-700 hover:text-white">Galeri</a></li>
-                <li><a href="#" class="text-black px-4 py-2 rounded-full  hover:bg-red-700 hover:text-white">Kontak</a></li>
+                <li><a href="{{ route('Lokasi') }}"
+                        class="text-black px-4 py-2 rounded-full  hover:bg-red-700 hover:text-white">Lokasi</a></li>
+                <li><a href="{{ route('Galeri') }}"
+                        class="text-black px-4 py-2 rounded-full  hover:bg-red-700 hover:text-white">Galeri</a></li>
+                <li><a href="{{ route('Kontak') }}"
+                        class="text-black px-4 py-2 rounded-full  hover:bg-red-700 hover:text-white">Kontak</a></li>
             </ul>
         </nav>
 
@@ -38,16 +43,20 @@
     <!-- Mobile Menu -->
     <div x-show="open" x-transition class="md:hidden bg-white rounded-xl shadow mx-4 mt-4 p-4">
         <ul class="space-y-2 font-medium text-sm">
-            <li><a href="#" class="block hover:text-red-600">ホーム</a></li>
+            <li><a href="#"
+                    class="block text-black px-4 py-2 rounded-full  hover:bg-red-600 hover:text-white">Beranda</a>
+            </li>
             <li>
-                <a href="#" class="block bg-red-600 text-white px-4 py-2 rounded-full shadow hover:bg-red-700">
-                    商品を探す
+                <a href="#" class="block text-black px-4 py-2 rounded-full  hover:bg-red-600 hover:text-white">
+                    Layanan
                 </a>
             </li>
-            <li><a href="#" class="block hover:text-red-600">マガジン</a></li>
-            <li><a href="#" class="block hover:text-red-600">サポート</a></li>
-            <li><a href="#" class="block hover:text-red-600">企業情報</a></li>
-            <li><a href="#" class="block hover:text-red-600">お問い合わせ</a></li>
+            <li><a href="#"
+                    class="block text-black px-4 py-2 rounded-full  hover:bg-red-600 hover:text-white">Lokasi</a></li>
+            <li><a href="#"
+                    class="block text-black px-4 py-2 rounded-full  hover:bg-red-600 hover:text-white">Galeri</a></li>
+            <li><a href="#"
+                    class="block text-black px-4 py-2 rounded-full  hover:bg-red-600 hover:text-white">Kontak</a></li>
         </ul>
     </div>
 </header>

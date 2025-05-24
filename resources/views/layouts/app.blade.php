@@ -10,8 +10,7 @@
 
     </head>
 
-    <body class="font-display h-full bg-no-repeat bg-cover bg-center"
-        style="background-image: url('/assets/images/TKK lahan kobar ujung2.jpg');">
+    <body class="font-display h-full bg-no-repeat bg-cover bg-center">
         @include('partials.header')
 
         <div>

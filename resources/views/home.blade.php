@@ -3,7 +3,8 @@
 @section('title', 'Home')
 
 @section('content')
-    <section class="relative h-screen flex items-center justify-center text-white ">
+    <section class="relative h-screen flex items-center justify-center text-white "
+        style="background-image: url('/assets/images/TKK lahan kobar ujung2.jpg');">
         <!-- Konten utama -->
         <div class="relative z-10 max-w-4xl px-4 text-center">
             <h2 class="text-3xl sm:text-4xl font-bold mb-4">
