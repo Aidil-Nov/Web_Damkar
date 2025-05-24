@@ -28,22 +28,22 @@
                         <div class="mb-4">
                             <label for="name" class="block mb-1 font-medium">Nama Lengkap</label>
                             <input type="text" id="name" name="name" required
-                                class="w-full px-4 py-2 border border-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
+                                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
                         </div>
                         <div class="mb-4">
                             <label for="email" class="block mb-1 font-medium">Email</label>
                             <input type="email" id="email" name="email" required
-                                class="w-full px-4 py-2 border border-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
+                                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
                         </div>
                         <div class="mb-4">
                             <label for="subject" class="block mb-1 font-medium">Subjek</label>
                             <input type="text" id="subject" name="subject" required
-                                class="w-full px-4 py-2 border border-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
+                                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
                         </div>
                         <div class="mb-4">
                             <label for="message" class="block mb-1 font-medium">Pesan</label>
                             <textarea id="message" name="message" rows="4" required
-                                class="w-full px-4 py-2 border border-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"></textarea>
+                                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"></textarea>
                         </div>
                         <button type="submit"
                             class="bg-red-600 text-white px-6 py-2 rounded-md hover:bg-red-700 transition duration-300">
