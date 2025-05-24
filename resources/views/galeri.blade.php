@@ -13,7 +13,7 @@
             </div>
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 <div class="relative overflow-hidden rounded-lg h-64 group cursor-pointer">
-                    <img src="/api/placeholder/300/300" alt="Tim Pemadam Kebakaran"
+                    <img src="{{ asset('/assets/images/anggota.jpg') }}" alt="Tim Pemadam Kebakaran"
                         class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
                     <div
                         class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 text-white p-3 transform translate-y-full transition-transform duration-300 group-hover:translate-y-0">
@@ -21,7 +21,7 @@
                     </div>
                 </div>
                 <div class="relative overflow-hidden rounded-lg h-64 group cursor-pointer">
-                    <img src="/api/placeholder/300/300" alt="Armada Mobil Pemadam"
+                    <img src="{{ asset('/assets/images/;;pembersihan saluran air.jpg') }}" alt="Armada Mobil Pemadam"
                         class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
                     <div
                         class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 text-white p-3 transform translate-y-full transition-transform duration-300 group-hover:translate-y-0">
@@ -29,7 +29,7 @@
                     </div>
                 </div>
                 <div class="relative overflow-hidden rounded-lg h-64 group cursor-pointer">
-                    <img src="/api/placeholder/300/300" alt="Latihan Penanggulangan Kebakaran"
+                    <img src="{{ asset('/assets/images/TKK ks.tubun.jpg') }}" alt="Latihan Penanggulangan Kebakaran"
                         class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
                     <div
                         class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 text-white p-3 transform translate-y-full transition-transform duration-300 group-hover:translate-y-0">
@@ -37,7 +37,7 @@
                     </div>
                 </div>
                 <div class="relative overflow-hidden rounded-lg h-64 group cursor-pointer">
-                    <img src="/api/placeholder/300/300" alt="Edukasi Masyarakat"
+                    <img src="{{ asset('/assets/images/TKK lahan kobar ujung.jpg') }}" alt="Edukasi Masyarakat"
                         class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
                     <div
                         class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 text-white p-3 transform translate-y-full transition-transform duration-300 group-hover:translate-y-0">
@@ -45,7 +45,7 @@
                     </div>
                 </div>
                 <div class="relative overflow-hidden rounded-lg h-64 group cursor-pointer">
-                    <img src="/api/placeholder/300/300" alt="Personel Bersiaga"
+                    <img src="{{ asset('/assets/images/TKK lahan kobar ujung 3.jpg') }}" alt="Personel Bersiaga"
                         class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
                     <div
                         class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 text-white p-3 transform translate-y-full transition-transform duration-300 group-hover:translate-y-0">
@@ -53,7 +53,7 @@
                     </div>
                 </div>
                 <div class="relative overflow-hidden rounded-lg h-64 group cursor-pointer">
-                    <img src="/api/placeholder/300/300" alt="Pemadaman Kebakaran"
+                    <img src="{{ asset('/assets/images/pembersihan saluran air 3.jpg') }}"alt="Pemadaman Kebakaran"
                         class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
                     <div
                         class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 text-white p-3 transform translate-y-full transition-transform duration-300 group-hover:translate-y-0">
@@ -61,7 +61,7 @@
                     </div>
                 </div>
                 <div class="relative overflow-hidden rounded-lg h-64 group cursor-pointer">
-                    <img src="/api/placeholder/300/300" alt="Peralatan Pemadam"
+                    <img src="{{ asset('/assets/images/TKK adis.jpg') }}" alt="Peralatan Pemadam"
                         class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
                     <div
                         class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 text-white p-3 transform translate-y-full transition-transform duration-300 group-hover:translate-y-0">
@@ -69,7 +69,7 @@
                     </div>
                 </div>
                 <div class="relative overflow-hidden rounded-lg h-64 group cursor-pointer">
-                    <img src="/api/placeholder/300/300" alt="Simulasi Evakuasi"
+                    <img src="{{ asset('/assets/images/pembersihan saluran air.jpg') }}" alt="Simulasi Evakuasi"
                         class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
                     <div
                         class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 text-white p-3 transform translate-y-full transition-transform duration-300 group-hover:translate-y-0">
