@@ -7,14 +7,14 @@
             </h2>
         </div>
 
-        <div class="grid">
+        <div class="grid text-white">
             <!-- Pos Pusat -->
-            <div class=" rounded-md shadow-md overflow-hidden">
-                <div class="h-48 bg-cover bg-center" style="background-image: url('/api/placeholder/400/200');"></div>
+            <div class=" rounded-md shadow-md overflow-hidden" style="background-image: url('/assets/images/pembersihan saluran air 3.jpg');">
+                <div class="h-48 bg-cover bg-center" style=""></div>
                 <div class="p-6 space-y-2">
-                    <h3 class="text-xl font-semibold text-gray-800">Pos Pemadam Pusat</h3>
-                    <p class="text-gray-600">Pos utama dengan peralatan lengkap dan personel siaga 24 jam.</p>
-                    <div class="text-sm text-gray-700 space-y-1">
+                    <h3 class="text-xl font-semibold">Pos Pemadam Pusat</h3>
+                    <p class="">Pos utama dengan peralatan lengkap dan personel siaga 24 jam.</p>
+                    <div class="text-sm  space-y-1" >
                         <p><span class="mr-2">📍</span>Jl. Panglima Sudirman No. 123, Kota Jakarta</p>
                         <p><span class="mr-2">📞</span>(021) 5551234</p>
                         <p><span class="mr-2">⏰</span>Beroperasi 24 Jam</p>

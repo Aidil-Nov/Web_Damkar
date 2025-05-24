@@ -4,7 +4,7 @@
 
             <!-- Logo -->
             <div class="flex items-center gap-4">
-                <img src="{{ asset('assets/images/logo.jpeg') }}" alt="Logo Pemadam Kebakaran"
+                <img src="{{ asset('/assets/images/logo.jpeg') }}" alt="Logo Pemadam Kebakaran"
                     class="w-14 h-14 object-contain" />
                 <h1 class="text-lg font-semibold sm:text-xl">Dinas Pemadam Kebakaran</h1>
             </div>

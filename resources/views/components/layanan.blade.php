@@ -18,13 +18,13 @@
                 <div class="p-6">
                     <h3 class="text-xl font-semibold text-red-700 mb-2">Pemadaman Kebakaran</h3>
                     <p class="text-gray-700">Tim kami terlatih untuk menangani berbagai jenis kebakaran dengan peralatan
-                        modern dan respons cepat untuk meminimalisir kerugian.</p>
+                        modern dan respons cepat untuk mem inimalisir kerugian.</p>
                 </div>
             </div>
 
             <!-- Kartu Layanan 2 -->
             <div class="bg-white shadow-md hover:shadow-xl transition rounded-lg overflow-hidden">
-                <div class="h-48 bg-cover bg-center" style="background-image: url('/assets/images/2.jpeg');"></div>
+                <div class="h-48 bg-cover bg-center" style="background-image: url('/assets/images/anggota.jpg');"></div>
                 <div class="p-6">
                     <h3 class="text-xl font-semibold text-red-700 mb-2">Penyelamatan dan Evakuasi</h3>
                     <p class="text-gray-700">Layanan penyelamatan dan evakuasi untuk situasi darurat seperti bencana
@@ -34,7 +34,7 @@
 
             <!-- Kartu Layanan 3 -->
             <div class="bg-white shadow-md hover:shadow-xl transition rounded-lg overflow-hidden">
-                <div class="h-48 bg-cover bg-center" style="background-image: url('/assets/images/3.jpeg');"></div>
+                <div class="h-48 bg-cover bg-center" style="background-image: url('/assets/images/pembersihan saluran air 3.jpg');"></div>
                 <div class="p-6">
                     <h3 class="text-xl font-semibold text-red-700 mb-2">Pencegahan dan Edukasi</h3>
                     <p class="text-gray-700">Program-program edukasi dan pelatihan untuk masyarakat tentang cara
