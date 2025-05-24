@@ -11,7 +11,6 @@
 
         <!-- Grid Layanan -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-
             <!-- Kartu Layanan 1 -->
             <div class="bg-white shadow-md hover:shadow-xl transition rounded-lg overflow-hidden">
                 <div class="h-48 bg-cover bg-center" style="background-image: url('/assets/images/1.jpeg');"></div>
