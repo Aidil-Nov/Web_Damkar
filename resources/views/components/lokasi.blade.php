@@ -1,10 +1,5 @@
-<section class="py-20 px-4 md:px-8 lg:px-16">
+<section class="py-20 md:px-8 lg:px-8">
     <div class="mx-auto">
-        <div class="text-center mb-8">
-            <h2 class="text-3xl font-sec inline-block relative">
-                Lokasi Kami
-            </h2>
-        </div>
         <div class="grid md:grid-cols-2 gap-4">
             <!-- Pos Pusat -->
             <div class="w-full ">
