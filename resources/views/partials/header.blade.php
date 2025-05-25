@@ -1,11 +1,10 @@
 <header id="main-header" class="py-4 fixed z-[1000] w-full transition-all duration-500 ease-in-out top-0">
     <div class="absolute flex flex-wrap items-center justify-between px-10 w-full mt-3">
-        <!-- Logo -->
-        <div class="flex items-center">
+           <div class="flex items-center">
             <img src="/assets/images/logo png.png" alt="Logo" class="h-12">
         </div>
 
-        <!-- Desktop Navigation -->
+
         <nav class="hidden md:block rounded-full px-6 py-3 fixed top-8 left-1/2 -translate-x-1/2 bg-white shadow">
             <ul class="flex items-center text-sm ">
                 <li>
@@ -50,17 +49,17 @@
                 <i class="ri-menu-line text-2xl"></i>
             </button>
 
-            <!-- Modal Pencarian (Hidden by default) -->
+
             <div id="searchModal" class="fixed inset-0 transition bg-opacity-50 items-center z-50 hidden">
                 <div class="bg-white rounded-4xl mx-8 p-6 mt-8 ">
                     <div class="flex justify-end items-center mb-4">
-                        <!-- Tombol Close -->
+                    
                         <button id="closeButton">
                             <i class="ri-close-line"></i>
                         </button>
                     </div>
 
-                    <!-- Search Input -->
+
                     <div class="relative px-6">
                         <input type="text" placeholder="Cari"
                             class="w-full px-4 py-4 bg-gray-200 border border-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-black">
@@ -88,8 +87,7 @@
             </div>
         </div>
 
-        <!-- Mobile Menu -->
-        <!-- Menu Navigasi Mobile -->
+>
         <div id="mobileMenu"
             class="md:hidden fixed top-20 right-4 bg-white rounded-xl shadow-lg p-4 w-52 hidden z-[999]">
             <ul class="space-y-2 text-sm font-medium">
@@ -136,10 +134,10 @@
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
         if (scrollTop > lastScrollTop) {
-            // Scroll ke bawah -> sembunyikan
+
             header.style.transform = "translateY(-500%)";
         } else {
-            // Scroll ke atas -> tampilkan
+
             header.style.transform = "translateY(0)";
         }
 
@@ -147,11 +145,4 @@
     });
 
     
-    // SCRIPT BARU UNTUK MENU MOBILE
-    const hamburgerButton = document.getElementById("hamburgerButton");
-    const mobileMenu = document.getElementById("mobileMenu");
-
-    hamburgerButton?.addEventListener("click", () => {
-        mobileMenu?.classList.toggle("hidden");
-    });
 </script>

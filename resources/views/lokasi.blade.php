@@ -13,7 +13,7 @@
         </div>
 
         <div class="grid">
-            <!-- Pos Pusat -->
+
             <div class="">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.815889811015!2d109.30541527477625!3d-0.06324289993613172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e1d595d4aa6b035%3A0xa745174c88c2d74f!2sJl.%20Kurnia%2C%20Kota%20Baru%2C%20Kec.%20Pontianak%20Sel.%2C%20Kota%20Pontianak%2C%20Kalimantan%20Barat%2078115!5e0!3m2!1sid!2sid!4v1748078560215!5m2!1sid!2sid"

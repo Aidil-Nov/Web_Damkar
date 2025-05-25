@@ -12,7 +12,7 @@
         </div>
         <div class="max-w-7xl mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Info Kontak -->
+
                 <div class="space-y-4">
                     <h3 class="text-xl font-semibold text-gray-800">Informasi Kontak</h3>
                     <p class="flex items-center gap-2"><span>📍</span>  Jl. Prof. M. Yamin - Jl. Kurnia</p>
@@ -21,7 +21,7 @@
                     <p class="flex items-center gap-2"><span>✉️</span> @kurniakobarofficial</p>
                 </div>
 
-                <!-- Form Kontak -->
+
                 <div>
                     <h3 class="text-lg font-semibold mb-4">Kirim Pesan</h3>
                     <form>

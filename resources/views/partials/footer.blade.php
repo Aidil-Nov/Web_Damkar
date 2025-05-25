@@ -1,15 +1,16 @@
 <footer class="bg-gray-900 text-white px-6 py-10">
   <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-    
-    <!-- Tentang Kami -->
+
+
     <div>
       <h3 class="text-xl font-semibold mb-4">Tentang Kami</h3>
       <p class="text-sm leading-relaxed">
-        Dinas Pemadam Kebakaran hadir untuk melindungi keselamatan dan properti masyarakat dari bahaya kebakaran dan bencana lainnya.
+        Dinas Pemadam Kebakaran hadir untuk melindungi keselamatan dan properti masyarakat dari bahaya kebakaran dan
+        bencana lainnya.
       </p>
     </div>
 
-    <!-- Tautan Cepat -->
+
     <div>
       <h3 class="text-xl font-semibold mb-4">Tautan Cepat</h3>
       <ul class="space-y-2 text-sm">
@@ -21,7 +22,7 @@
       </ul>
     </div>
 
-    <!-- Layanan -->
+
     <div>
       <h3 class="text-xl font-semibold mb-4">Layanan</h3>
       <ul class="space-y-2 text-sm">
@@ -33,7 +34,6 @@
       </ul>
     </div>
 
-    <!-- Hubungi Kami -->
     <div>
       <h3 class="text-xl font-semibold mb-4">Hubungi Kami</h3>
       <ul class="text-sm space-y-2">
@@ -44,7 +44,7 @@
     </div>
   </div>
 
-  <!-- Footer Bawah -->
+
   <div class="mt-10 text-center text-sm text-white/80">
     &copy; 2025 Dinas Pemadam Kebakaran. Hak Cipta Dilindungi.
   </div>
