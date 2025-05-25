@@ -11,14 +11,13 @@
 
         <!-- Konten utama -->
         <div class="relative z-10 w-full max-w-4xl px-4 text-center">
-            <h2 class="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-sec leading-tight">
+            <h2 class="text-2xl sm:text-5xl md:text-6xl lg:text-6xl font-sec leading-tight">
                 Siap Siaga, Cepat Tanggap, Melindungi Masyarakat
             </h2>
             <p class="text-sm sm:text-base md:text-lg max-w-2xl mx-auto mb-8">
-                siap 24 jam setiap hari.
+                Posko Damkar Kurnia Kobar siap 24 jam setiap hari.
             </p>
-            <a href="{{ route('Kontak') }}"
-                class="btn-red">
+            <a href="{{ route('Kontak') }}" class="btn-red">
                 Hubungi Kami
             </a>
         </div>

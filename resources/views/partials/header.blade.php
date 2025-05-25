@@ -46,9 +46,12 @@
                 <i class="ri-search-line"></i>
                 </svg>
             </button>
+            <button id="hamburgerButton" class="md:hidden text-red-600 p-2 rounded-full shadow-md">
+                <i class="ri-menu-line text-2xl"></i>
+            </button>
 
             <!-- Modal Pencarian (Hidden by default) -->
-            <div id="searchModal" class="fixed inset-0 transition bg-opacity-50 items-center z-50 hidden    ">
+            <div id="searchModal" class="fixed inset-0 transition bg-opacity-50 items-center z-50 hidden">
                 <div class="bg-white rounded-4xl mx-8 p-6 mt-8 ">
                     <div class="flex justify-end items-center mb-4">
                         <!-- Tombol Close -->
@@ -82,30 +85,47 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
 
-                <!-- Mobile Menu -->
-                <div class="md:hidden bg-white rounded-xl shadow mx-4 mt-4 p-4" style="display: none;">
-                    <ul class="space-y-2 font-medium text-sm">
-                        <li><a href="#"
-                                class="block text-black px-4 py-2 rounded-full  hover:bg-red-600 hover:text-white">Beranda</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block text-black px-4 py-2 rounded-full  hover:bg-red-600 hover:text-white">
-                                Layanan
-                            </a>
-                        </li>
-                        <li><a href="#"
-                                class="block text-black px-4 py-2 rounded-full  hover:bg-red-600 hover:text-white">Lokasi</a>
-                        </li>
-                        <li><a href="#"
-                                class="block text-black px-4 py-2 rounded-full  hover:bg-red-600 hover:text-white">Galeri</a>
-                        </li>
-                        <li><a href="#"
-                                class="block text-black px-4 py-2 rounded-full  hover:bg-red-600 hover:text-white">Kontak</a>
-                        </li>
-                    </ul>
-                </div>
+        <!-- Mobile Menu -->
+        <!-- Menu Navigasi Mobile -->
+        <div id="mobileMenu"
+            class="md:hidden fixed top-20 right-4 bg-white rounded-xl shadow-lg p-4 w-52 hidden z-[999]">
+            <ul class="space-y-2 text-sm font-medium">
+                <li>
+                    <a href="{{ route('Home') }}"
+                        class="block px-4 py-2 rounded-full hover:bg-red-600 hover:text-white {{ request()->routeIs('Home') ? 'bg-red-600 text-white' : '' }}">
+                        Beranda
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ route('Layanan') }}"
+                        class="block px-4 py-2 rounded-full hover:bg-red-600 hover:text-white {{ request()->routeIs('Layanan') ? 'bg-red-600 text-white' : '' }}">
+                        Layanan
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ route('Lokasi') }}"
+                        class="block px-4 py-2 rounded-full hover:bg-red-600 hover:text-white {{ request()->routeIs('Lokasi') ? 'bg-red-600 text-white' : '' }}">
+                        Lokasi
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ route('Galeri') }}"
+                        class="block px-4 py-2 rounded-full hover:bg-red-600 hover:text-white {{ request()->routeIs('Galeri') ? 'bg-red-600 text-white' : '' }}">
+                        Galeri
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ route('Kontak') }}"
+                        class="block px-4 py-2 rounded-full hover:bg-red-600 hover:text-white {{ request()->routeIs('Kontak') ? 'bg-red-600 text-white' : '' }}">
+                        Kontak
+                    </a>
+                </li>
+            </ul>
+        </div>
+
 </header>
 
 <script>
@@ -124,5 +144,14 @@
         }
 
         lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+    });
+
+    
+    // SCRIPT BARU UNTUK MENU MOBILE
+    const hamburgerButton = document.getElementById("hamburgerButton");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    hamburgerButton?.addEventListener("click", () => {
+        mobileMenu?.classList.toggle("hidden");
     });
 </script>
