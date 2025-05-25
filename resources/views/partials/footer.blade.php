@@ -37,9 +37,9 @@
     <div>
       <h3 class="text-xl font-semibold mb-4">Hubungi Kami</h3>
       <ul class="text-sm space-y-2">
-        <li>Nomor Darurat: <span class="font-semibold">113</span></li>
-        <li>Kantor: (021) 5551234</li>
-        <li>Email: <a href="mailto:kaka@gmail." class="underline">kaka@gmail.com</a></li>
+        <li>Nomor Darurat: <span class="font-semibold"> +62 831-2607-5724 <B>Fikri Adriansyah</B></span></li>
+        <li>Kantor: +62 812-5672-0395 <b>Mujahidah</b></li>
+        <li>Email: <a href="mailto:@kurniakobarofficial." class="underline">@kurniakobarofficial</a></li>
       </ul>
     </div>
   </div>
