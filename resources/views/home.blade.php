@@ -25,11 +25,10 @@
 
     <section class="py-16 px-4 text-center bg-white text-gray-900">
         <div class="max-w-4xl mx-auto">
-            <h2 class="font-sec text-3xl sm:text-4xl md:text-5xl mb-4">Kesatria Jirah Oranye</h2>
+            <h2 class="font-sec text-3xl sm:text-4xl md:text-5xl mb-4">Dari Rakyat Untuk Rakyat</h2>
             <p class="font-sec text-sm sm:text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
-                Bila kau butuh telinga 'tuk mendengar
-                Bahu 'tuk bersandar, raga 'tuk berlindung
-                Pasti kau temukan aku di garis terdepan
+                Kami Datang Bukan Sebagai Pahlawan, Tapi Sebagai Saudara.
+Pemadam Kebakaran bukan hanya tugas, ini adalah bentuk cinta kami kepada sesama.
             </p>
         </div>
 
