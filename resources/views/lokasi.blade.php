@@ -6,7 +6,7 @@
 
     <section class="bg-white py-12 px-4 md:px-8 lg:px-16">
 
-    <div class=" mb-12 pt-12">     
+        <div class=" mb-12 pt-12">
             <h2 class="text-5xl font-sec inline-block pb-2 relative ">
                 Lokasi Kami
             </h2>
@@ -26,9 +26,10 @@
                             <h3 class="text-xl font-semibold">POSKO KURNIA KOBAR</h3>
                             <p class="">Posko DAMKAR KURNIA KOBAR dengan personel siaga 24 jam.</p>
                             <div class="text-sm  space-y-1">
-                                <p><span class="mr-2">📍</span> Jl. Prof. M. Yamin - Jl. Kurnia</p>
-                                <p><span class="mr-2">📞</span>(+62) 81254475004</p>
-                                <p><span class="mr-2">⏰</span>Beroperasi 24 Jam</p>
+                                <p><span class="mr-2"><i class="ri-map-pin-line"></i></span> Jl. Prof. M. Yamin - Jl. Kurnia
+                                </p>
+                                <p><span class="mr-2"><i class="ri-customer-service-2-line"></i></span>(+62) 81254475004</p>
+                                <p><span class="mr-2"><i class="ri-time-line"></i></span>Beroperasi 24 Jam</p>
                             </div>
                         </div>
                     </div>

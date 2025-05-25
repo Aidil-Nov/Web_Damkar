@@ -3,7 +3,7 @@
 
 
     <div>
-      <h3 class="text-xl font-semibold mb-4">Tentang Kami</h3>
+      <h3 class="text-xl font-semibold mb-4" id="tentang">Tentang Kami</h3>
       <p class="text-sm leading-relaxed">
         Dinas Pemadam Kebakaran hadir untuk melindungi keselamatan dan properti masyarakat dari bahaya kebakaran dan
         bencana lainnya.

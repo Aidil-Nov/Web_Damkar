@@ -1,6 +1,6 @@
 <header id="main-header" class="py-4 fixed z-[1000] w-full transition-all duration-500 ease-in-out top-0">
     <div class="absolute flex flex-wrap items-center justify-between px-10 w-full mt-3">
-           <div class="flex items-center">
+        <div class="flex items-center">
             <img src="/assets/images/logo png.png" alt="Logo" class="h-12">
         </div>
 
@@ -53,7 +53,7 @@
             <div id="searchModal" class="fixed inset-0 transition bg-opacity-50 items-center z-50 hidden">
                 <div class="bg-white rounded-4xl mx-8 p-6 mt-8 ">
                     <div class="flex justify-end items-center mb-4">
-                    
+
                         <button id="closeButton">
                             <i class="ri-close-line"></i>
                         </button>
@@ -87,7 +87,6 @@
             </div>
         </div>
 
->
         <div id="mobileMenu"
             class="md:hidden fixed top-20 right-4 bg-white rounded-xl shadow-lg p-4 w-52 hidden z-[999]">
             <ul class="space-y-2 text-sm font-medium">
@@ -134,15 +133,19 @@
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
         if (scrollTop > lastScrollTop) {
-
             header.style.transform = "translateY(-500%)";
         } else {
-
             header.style.transform = "translateY(0)";
         }
 
         lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
     });
 
-    
+    // SCRIPT BARU UNTUK MENU MOBILE
+    const hamburgerButton = document.getElementById("hamburgerButton");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    hamburgerButton?.addEventListener("click", () => {
+        mobileMenu?.classList.toggle("hidden");
+    });
 </script>

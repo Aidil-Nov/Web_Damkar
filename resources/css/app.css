@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=  +Serif:ital,wght@0,300..900;1,300..900&display=swap");
 @import "tailwindcss";
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
@@ -11,44 +11,11 @@
     --font-sec: "Ancizar Serif", serif;
 }
 
-/* ========== Background section utama ========== */
-.section-hero {
-    @apply h-screen flex items-center justify-center text-white bg-cover bg-no-repeat relative;
-}
-
-.section-hero-bg {
-    @apply absolute inset-0;
-    /* Untuk gradient dan background image, tetap pakai inline style atau tailwind plugin tambahan */
-}
-
-/* ========== Konten Tengah di Hero ========== */
-.hero-content {
-    @apply relative z-10 max-w-4xl px-4 text-center;
-}
-
-.hero-title {
-    @apply text-3xl sm:text-4xl font-bold mb-4;
-}
-
-.hero-paragraph {
-    @apply text-base sm:text-lg max-w-2xl mx-auto mb-8;
-}
-
-.hero-button {
-    @apply inline-block bg-red-600 text-white shadow-lg font-semibold px-6 py-3 rounded-md hover:bg-red-800 transition;
-}
 
 .btn-red {
     @apply bg-red-600 text-white px-6 py-3 rounded-full hover:bg-red-700 transition ;
 }
 
-.container-center {
-    @apply max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8;
-}
-
-.section-padding {
-    @apply py-12 sm:py-16 lg:py-20;
-}
 
 @keyframes scrollHorizontalKiri {
     0% {

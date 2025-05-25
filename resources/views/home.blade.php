@@ -66,7 +66,8 @@ Pemadam Kebakaran bukan hanya tugas, ini adalah bentuk cinta kami kepada sesama.
                 Semue Bombe Padamkan •
             </div>
         </div>
-        <button class="btn-red mt-8">Tentang Kami</button>
+        <button class="btn-red mt-8">
+            <a href="#tentang">Tentang Kami</a></button>
     </div>
 
     <x-lokasi />

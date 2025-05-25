@@ -15,10 +15,10 @@
 
                 <div class="space-y-4">
                     <h3 class="text-xl font-semibold text-gray-800">Informasi Kontak</h3>
-                    <p class="flex items-center gap-2"><span>📍</span>  Jl. Prof. M. Yamin - Jl. Kurnia</p>
-                    <p class="flex items-center gap-2"><span>📞</span> Nomor Darurat: +62 831-2607-5724 <B>Fikri Adriansyah</B></p>
-                    <p class="flex items-center gap-2"><span>📞</span> Kantor: +62 812-5672-0395 <b>Mujahidah</b></p>
-                    <p class="flex items-center gap-2"><span>✉️</span> @kurniakobarofficial</p>
+                    <p class="flex items-center gap-2"><span><i class="ri-map-pin-line"></i></span>  Jl. Prof. M. Yamin - Jl. Kurnia</p>
+                    <p class="flex items-center gap-2"><span><i class="ri-alarm-warning-line"></i></span> Nomor Darurat: +62 831-2607-5724 <B>Fikri Adriansyah</B></p>
+                    <p class="flex items-center gap-2"><span><i class="ri-customer-service-2-line"></i></span> Kantor: +62 812-5672-0395 <b>Mujahidah</b></p>
+                    <p class="flex items-center gap-2"><span><i class="ri-instagram-line"></i></span> @kurniakobarofficial</p>
                 </div>
 
 

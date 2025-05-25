@@ -14,9 +14,9 @@
                             <h3 class="text-xl font-semibold">Pos Pemadam Pusat</h3>
                             <p class="">Pos utama dengan peralatan lengkap dan personel siaga 24 jam.</p>
                             <div class="text-sm  space-y-1">
-                                <p><span class="mr-2">📍</span> Jl. Prof. M. Yamin - Jl. Kurnia</p>
-                                <p><span class="mr-2">📞</span>(+62) 81254475004</p>
-                                <p><span class="mr-2">⏰</span>Beroperasi 24 Jam</p>
+                                <p><span class="mr-2"><i class="ri-map-pin-line"></i></span> Jl. Prof. M. Yamin - Jl. Kurnia</p>
+                                <p><span class="mr-2"><i class="ri-customer-service-2-line"></i></span>(+62) 81254475004</p>
+                                <p><span class="mr-2"><i class="ri-time-line"></i></span>Beroperasi 24 Jam</p>
                             </div>
                         </div>
                     </div>
