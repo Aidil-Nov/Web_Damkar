@@ -20,7 +20,7 @@
                 </div>
             </div>
             <div class="relative overflow-hidden rounded-lg h-64 group cursor-pointer">
-                <img src="{{ asset('/assets/images/;;pembersihan saluran air.jpg') }}" alt="Armada Mobil Pemadam"
+                <img src="{{ asset('/assets/images/oto.jpg') }}" alt="Armada Mobil Pemadam"
                     class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
                 <div
                     class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 text-white p-3 transform translate-y-full transition-transform duration-300 group-hover:translate-y-0">
