@@ -2,10 +2,10 @@
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <!-- Judul -->
-        <div class="text-center mb-12">
-            <h2 class="text-3xl font-bold text-blue-900 inline-block pb-2 relative">
+        <div class="text-center mb-12">     
+            <h2 class="text-3xl font-bold text-blue-900 inline-block pb-2 relative ">
                 Layanan
-                <span class="absolute bottom-0 left-1/4 w-1/2 h-1 bg-red-600"></span>
+                <span class="absolute bottom-0 left-1/4 w-1/2 h-1 bg-red-600 transition"></span>
             </h2>
         </div>
 
@@ -19,7 +19,7 @@
                     <p class="text-gray-700">Tim kami terlatih untuk menangani berbagai jenis kebakaran dengan peralatan
                         modern dan respons cepat untuk mem inimalisir kerugian.</p>
                 </div>
-            </div>
+            </div>  
 
             <!-- Kartu Layanan 2 -->
             <div class="bg-white shadow-md hover:shadow-xl transition rounded-lg overflow-hidden">
