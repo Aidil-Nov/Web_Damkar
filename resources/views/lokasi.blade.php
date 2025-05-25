@@ -24,8 +24,8 @@
                 <div class="rounded-md shadow-md overflow-hidden">
                     <div class="h-48 bg-cover bg-center">
                         <div class="p-6 space-y-2">
-                            <h3 class="text-xl font-semibold">Pos Pemadam Pusat</h3>
-                            <p class="">Pos utama dengan peralatan lengkap dan personel siaga 24 jam.</p>
+                            <h3 class="text-xl font-semibold">POSKO KURNIA KOBAR</h3>
+                            <p class="">Posko DAMKAR KURNIA KOBAR dengan personel siaga 24 jam.</p>
                             <div class="text-sm  space-y-1">
                                 <p><span class="mr-2">📍</span> Jl. Prof. M. Yamin - Jl. Kurnia</p>
                                 <p><span class="mr-2">📞</span>(+62) 81254475004</p>
