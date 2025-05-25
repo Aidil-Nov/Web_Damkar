@@ -38,7 +38,7 @@
     </section>
 
     <div class="h-64 sm:h-80 md:h-[32rem] bg-cover bg-center m-8 rounded-2xl"
-        style="background-image: url('/assets/images/pembersihan saluran air.jpg');">
+        style="background-image: url('/assets/images/pemadam.jpg');">
     </div>
     <div class="flex flex-wrap items-center justify-center">
         <div class="scrolling-text-container w-full mx-auto">

@@ -24,7 +24,7 @@
             </div>
             <div class="w-full ">
                 <div class="w-full h-full bg-h-full bgcover bg-center rounded-2xl shadow-md"
-                    style="background-image: url('/assets/images/rescue sarang tawon.jpg');">
+                    style="background-image: url('/assets/images/foto.jpg');">
                 </div>
 
             </div>
