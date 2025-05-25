@@ -11,25 +11,27 @@
                     style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/assets/images/1.jpeg');">
                     <p class="text-white text-5xl p-8 font-sec">Tim kami terlatih untuk menangani berbagai jenis kebakaran.
                     </p>
-
-                    <button class="btn-red ml-8">Kaka Anjing?</button>
-                </div>
+<a href="{{ route('Kontak') }}">
+<button class="btn-red ml-8">Hubungi Kami</button>
+                </div></a>
             </div>
             <div>
                 <div class="bg-cover bg-center rounded-2xl h-full"
                     style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url('/assets/images/anggota.jpg');">
                     <h1 class="text-white text-4xl font-medium p-8 w-2 ">Garda Terdepan.
                     </h1>
-                    <p class="text-white p-8 w-10/12">Kaka Garda Paling depan yang laen jage jak dari belakang hahahahahaha.
+                    <p class="text-white p-8 w-10/12">Saat api mengancam, kami datang cepat dan sigap. Dari rumah hingga hutan, tim kami terlatih untuk memadamkan api, menyelamatkan korban, dan memastikan keamanan area.
                     </p>
                 </div>
             </div>
             <div class="col-start-2">
                 <div class="bg-cover bg-center rounded-2xl h-full"
-                    style="background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/assets/images/1.jpeg');">
-                    <h1 class="text-white text-4xl font-medium p-8 w-2 ">Judul Cik.
+                    style="background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/assets/images/;;pembersihan saluran air.jpg');">
+                    <h1 class="text-white text-4xl font-medium p-8 w-2 ">Siap Melayani.
                     </h1>
-                    <p class="text-white p-8 w-10/12">Kaka Garda Paling depan yang laen jage jak dari belakang hahahahahaha.
+                    <p class="text-white p-8 w-10/12">Lebih dari sekadar api, kami adalah penyelamat serbaguna. Mulai dari kecelakaan lalu lintas, orang terjebak di ketinggian atau air, hingga penanganan bahan berbahaya, kami selalu siap membantu dan mengevakuasi Anda.
+
+
                     </p>
                 </div>
 
