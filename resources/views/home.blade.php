@@ -74,5 +74,5 @@
 
     <!-- Komponen tambahan -->
     <x-lokasi />
-    <x-layanan />
+    <x-berita />
 @endsection
