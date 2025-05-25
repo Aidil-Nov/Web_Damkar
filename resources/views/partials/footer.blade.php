@@ -1,4 +1,4 @@
-<footer class="bg-blue-950 text-white px-6 py-10">
+<footer class="bg-gray-900 text-white px-6 py-10">
   <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
     
     <!-- Tentang Kami -->
