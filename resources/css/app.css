@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&display=swap");
 @import "tailwindcss";
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
@@ -6,8 +7,8 @@
 @source '../**/*.js';
 
 @theme {
-    --font-display: "Rubik", sans-serif;
-    --font-sec:"Ancizar Serif", serif;
+    --font-display: "Montserrat", sans-serif;
+    --font-sec: "Ancizar Serif", serif;
 }
 
 /* ========== Background section utama ========== */
@@ -38,7 +39,7 @@
 }
 
 .btn-red {
-    @apply bg-red-600 text-white px-6 py-3 rounded-full hover:bg-red-700 transition;
+    @apply bg-red-600 text-white px-6 py-3 rounded-full hover:bg-red-700 transition font-sec;
 }
 
 .container-center {
@@ -47,4 +48,39 @@
 
 .section-padding {
     @apply py-12 sm:py-16 lg:py-20;
+}
+
+@keyframes scrollHorizontalKiri {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+@keyframes scrollHorizontalKanan {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.scrolling-text-container {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.scrolling-text-kanan {
+    display: inline-block;
+    animation: scrollHorizontalKanan 20s linear infinite;
+}
+.scrolling-text-kiri {
+    display: inline-block;
+    animation: scrollHorizontalKiri 20s linear infinite;
+}
+
+.scrolling-text:hover {
+    animation-play-state: paused;
 }
