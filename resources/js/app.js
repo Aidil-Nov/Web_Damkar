@@ -1,46 +1,37 @@
 import "./bootstrap";
 import "remixicon/fonts/remixicon.css";
 
+// JavaScript untuk mengontrol modal
 const searchButton = document.getElementById("searchButton");
 const closeButton = document.getElementById("closeButton");
 const searchModal = document.getElementById("searchModal");
 const body = document.body;
-let scrollPosition = 0; // Variabel untuk menyimpan posisi scroll
 
 // Fungsi untuk membuka modal
 function openModal() {
-    // Simpan posisi scroll saat ini
-    scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-    
-    // Tambahkan class ke body untuk mencegah scroll
-    body.style.overflow = 'hidden';
-    body.style.position = 'fixed';
-    body.style.top = `-${scrollPosition}px`; // Kompensasi posisi scroll
-    body.style.width = '100%';
-    
     searchModal.classList.remove("hidden");
+    body.style.overflow = "hidden";
+    body.style.position = "fixed";
+    body.style.width = "100%";
 }
 
 // Fungsi untuk menutup modal
 function closeModal() {
     searchModal.classList.add("hidden");
-    
-    // Kembalikan properti scroll
-    body.style.overflow = '';
-    body.style.position = '';
-    body.style.top = '';
-    body.style.width = '';
-    
-    // Kembalikan posisi scroll
-    window.scrollTo(0, scrollPosition);
+    body.style.overflow = "";
+    body.style.position = "";
+    body.style.width = "";
 }
 
-// Event listeners (tetap sama)
+// Buka modal saat tombol search diklik
 searchButton.addEventListener("click", openModal);
+
+// Tutup modal saat tombol close diklik
 closeButton.addEventListener("click", closeModal);
+
+// Tutup modal saat klik di luar area modal
 searchModal.addEventListener("click", (e) => {
-    if (e.target === searchModal) closeModal();
-});
-document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && !searchModal.classList.contains('hidden')) closeModal();
+    if (e.target === searchModal) {
+        closeModal();
+    }
 });

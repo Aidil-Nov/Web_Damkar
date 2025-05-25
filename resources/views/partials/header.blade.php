@@ -7,25 +7,39 @@
 
         <!-- Desktop Navigation -->
         <nav class="hidden md:block rounded-full px-6 py-3 fixed top-8 left-1/2 -translate-x-1/2 bg-white shadow">
-
-            <ul class="flex items-center text-sm">
-                <li><a href="{{ route('Home') }}"
-                        class=" px-4 py-2 rounded-full  hover:bg-red-700 hover:text-white transition">Beranda</a></li>
+            <ul class="flex items-center text-sm ">
                 <li>
-                    <a href="{{ route('Layanan') }}"
-                        class="  px-4 py-2 rounded-full  hover:bg-red-700 hover:text-white transition">
+                    <a href="{{ route('Home') }}" class="px-4 py-2 rounded-full hover:bg-red-700 hover:text-white transition 
+                      {{ request()->routeIs('Home') ? 'bg-red-600 text-white' : '' }}">
+                        Beranda
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ route('Layanan') }}" class="px-4 py-2 rounded-full hover:bg-red-700 hover:text-white transition
+                      {{ request()->routeIs('Layanan') ? 'bg-red-600 text-white' : '' }}">
                         Layanan
                     </a>
                 </li>
-                <li><a href="{{ route('Lokasi') }}"
-                        class=" px-4 py-2 rounded-full  hover:bg-red-700 hover:text-white transition">Lokasi</a></li>
-                <li><a href="{{ route('Galeri') }}"
-                        class=" px-4 py-2 rounded-full  hover:bg-red-700 hover:text-white transition">Galeri</a></li>
-                <li><a href="{{ route('Kontak') }}"
-                        class=" px-4 py-2 rounded-full  hover:bg-red-700 hover:text-white transition">Kontak</a></li>
+                <li>
+                    <a href="{{ route('Lokasi') }}" class="px-4 py-2 rounded-full hover:bg-red-700 hover:text-white transition
+                      {{ request()->routeIs('Lokasi') ? 'bg-red-600 text-white' : '' }}">
+                        Lokasi
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ route('Galeri') }}" class="px-4 py-2 rounded-full hover:bg-red-700 hover:text-white transition
+                      {{ request()->routeIs('Galeri') ? 'bg-red-600 text-white' : '' }}">
+                        Galeri
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ route('Kontak') }}" class="px-4 py-2 rounded-full hover:bg-red-700 hover:text-white transition
+                      {{ request()->routeIs('Kontak') ? 'bg-red-600 text-white' : '' }}">
+                        Kontak
+                    </a>
+                </li>
             </ul>
         </nav>
-
         <div class="flex items-center space-x-4 right-0 px-10 absolute">
             <button id="searchButton"
                 class="text-red-600 p-2 rounded-full shadow-md transition duration-300 hover:scale-200">
@@ -34,7 +48,7 @@
             </button>
 
             <!-- Modal Pencarian (Hidden by default) -->
-            <div id="searchModal" class="fixed inset-0 transition bg-opacity-50 items-center z-50 hidden">
+            <div id="searchModal" class="fixed inset-0 transition bg-opacity-50 items-center z-50 hidden    ">
                 <div class="bg-white rounded-4xl mx-8 p-6 mt-8 ">
                     <div class="flex justify-end items-center mb-4">
                         <!-- Tombol Close -->
