@@ -17,12 +17,22 @@
             </div>
             <div>
                 <div class="bg-cover bg-center rounded-2xl h-full"
-                    style="background-image: url('/assets/images/anggota.jpg');">
+                    style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url('/assets/images/anggota.jpg');">
+                    <h1 class="text-white text-4xl font-medium p-8 w-2 ">Garda Terdepan.
+                    </h1>
+                    <p class="text-white p-8 w-10/12">Kaka Garda Paling depan yang laen jage jak dari belakang hahahahahaha.
+                    </p>
                 </div>
             </div>
             <div class="col-start-2">
-                <div class="bg-cover bg-center rounded-2xl h-full" style="background-image: url('/assets/images/1.jpeg');">
+                <div class="bg-cover bg-center rounded-2xl h-full"
+                    style="background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/assets/images/1.jpeg');">
+                    <h1 class="text-white text-4xl font-medium p-8 w-2 ">Judul Cik.
+                    </h1>
+                    <p class="text-white p-8 w-10/12">Kaka Garda Paling depan yang laen jage jak dari belakang hahahahahaha.
+                    </p>
                 </div>
+
             </div>
         </div>
     </section>
