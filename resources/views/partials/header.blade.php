@@ -1,12 +1,12 @@
 <header id="main-header" class="py-4 fixed z-[1000] w-full transition-all duration-500 ease-in-out top-0">
-    <div class="absolute flex flex-wrap items-center justify-between px-6 w-full">
+    <div class="absolute flex flex-wrap items-center justify-between px-6 w-full mt-3">
         <!-- Logo -->
         <div class="flex items-center">
-            <img src="/assets/images/logo png.png" alt="Logo" class="h-12 top-8">
+            <img src="/assets/images/logo png.png" alt="Logo" class="h-12">
         </div>
 
         <!-- Desktop Navigation -->
-        <nav class="hidden md:block rounded-full px-6 py-3 fixed top-8 left-1/2 -translate-x-1/2 bg-white">
+        <nav class="hidden md:block rounded-full px-6 py-3 fixed top-8 left-1/2 -translate-x-1/2 bg-white shadow">
 
             <ul class="flex items-center text-sm">
                 <li><a href="{{ route('Home') }}"
@@ -26,10 +26,11 @@
             </ul>
         </nav>
 
-        <div class="flex items-center space-x-4 px-4 py-2 right-0 absolute ">
+        <div class="flex items-center space-x-4 right-0 absolute">
             <button
-                class="flex items-center space-x-4 hover:scale-110 transition-transform rounded-full justify-center">
-                <i class="ri-search-line text-white text-xl "></i>
+                clas="flex items-center space-x-4 hover:scale-110 transition-transform rounded-full justify-center p-1 bg-white hover:text-white">
+                <i class="ri-searcsh-line text-xl"></i>
+                <input type="text" >
             </button>
             <button @click="open = !open"
                 class="w-12 h-12 bg-white rounded-full shadow flex items-center justify-center md:hidden">

@@ -1,21 +1,20 @@
-<section class="bg-white py-12 px-4 md:px-8 lg:px-16">
-    <div class="max-w-6xl mx-auto">
-        <div class="text-center mb-12">
-            <h2 class="text-3xl font-bold text-blue-900 inline-block pb-2 relative">
+<section class="py-20 px-4 md:px-8 lg:px-16">
+    <div class="mx-auto">
+        <div class="text-center mb-8">
+            <h2 class="text-3xl font-sec inline-block relative">
                 Lokasi Kami
-                <span class="absolute bottom-0 left-1/4 w-1/2 h-1 bg-red-600"></span>
             </h2>
         </div>
-        <div class="grid">
+        <div class="grid md:grid-cols-2 gap-4">
             <!-- Pos Pusat -->
-            <div class="w-full">
+            <div class="w-full ">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.815939809444!2d109.31852237394934!3d-0.0625890355107067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e1d59ae2b06157f%3A0x12785953e7987186!2sPosko%20Damkar%20Purnama!5e0!3m2!1sid!2sid!4v1748071857902!5m2!1sid!2sid"
-                    class="w-full h-64" style="border:0;" allowfullscreen="true" loading="lazy"
+                    class="w-full h-64 rounded-t-2xl shadow-md" style="border:0;" allowfullscreen="true" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
-                <div class="rounded-md shadow-md overflow-hidden">
-                    <div class="h-48 bg-cover bg-center">
+                <div class="rounded-b-2xl shadow-md overflow-hidden">
+                    <div class=" bg-cover bg-center">
                         <div class="p-6 space-y-2">
                             <h3 class="text-xl font-semibold">Pos Pemadam Pusat</h3>
                             <p class="">Pos utama dengan peralatan lengkap dan personel siaga 24 jam.</p>
@@ -27,6 +26,12 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="w-full ">
+                <div class="w-full h-full bg-h-full bgcover bg-center rounded-2xl shadow-md"
+                    style="background-image: url('/assets/images/rescue sarang tawon.jpg');">
+                </div>
+
             </div>
 
         </div>
