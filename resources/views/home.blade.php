@@ -3,27 +3,74 @@
 @section('title', 'Home')
 
 @section('content')
-    <main class="h-screen flex items-center justify-center text-white bg-cover bg-no-repeat">
+    <main class="relative h-screen flex items-center justify-center text-white bg-cover bg-no-repeat">
         <!-- Background semi-transparent dengan gradient -->
-        <div class="absolute inset-0"
-            style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/assets/images/TKK lahan kobar ujung2.jpg'); background-size: cover; background-position: center;">
+        <div class="absolute inset-0 bg-black bg-opacity-60 rounded-b-2xl"
+            style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url('/assets/images/TKK lahan kobar ujung2.jpg'); background-size: cover; background-position: center;">
         </div>
 
         <!-- Konten utama -->
-        <div class="relative z-10 max-w-4xl px-4 text-center">
-            <h2 class="text-3xl sm:text-4xl font-bold mb-4">
+        <div class="relative z-10 w-full max-w-4xl px-4 text-center">
+            <h2 class="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-sec mb-4 leading-tight">
                 Siap Siaga, Cepat Tanggap, Melindungi Masyarakat
             </h2>
-            <p class="text-base sm:text-lg max-w-2xl mx-auto mb-8">
-                Dinas Pemadam Kebakaran siap 24 jam setiap hari untuk melindungi keselamatan dan properti masyarakat dari
-                bahaya kebakaran dan bencana lainnya.
+            <p class="text-sm sm:text-base md:text-lg max-w-2xl mx-auto mb-8">
+                siap 24 jam setiap hari.
             </p>
             <a href="{{ route('Kontak') }}"
-                class="inline-block bg-red-600 text-white shadow-lg font-semibold px-6 py-3 rounded-md hover:bg-red-800 transition">
+                class="btn-red inline-block px-6 py-3 text-white bg-red-600 hover:bg-red-700 rounded-md transition">
                 Hubungi Kami
             </a>
         </div>
     </main>
+
+    <section class="py-16 px-4 text-center bg-white text-gray-900">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="font-sec text-3xl sm:text-4xl md:text-5xl mb-4">Kesatria Jirah Oranye</h2>
+            <p class="font-sec text-sm sm:text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
+                Bila kau butuh telinga 'tuk mendengar
+                Bahu 'tuk bersandar, raga 'tuk berlindung
+                Pasti kau temukan aku di garis terdepan
+            </p>
+        </div>
+
+
+    </section>
+
+    <div class="h-64 sm:h-80 md:h-[32rem] bg-cover bg-center m-8 rounded-2xl"
+        style="background-image: url('/assets/images/pembersihan saluran air.jpg');">
+    </div>
+    <div class="flex flex-wrap items-center justify-center">
+        <div class="scrolling-text-container w-full mx-auto">
+            <div class="scrolling-text-kiri text-lg">
+                <!-- Duplikat teks untuk efek seamless -->
+                Dari Rakyat Untuk Rakyat •
+                Dari Rakyat Untuk Rakyat •
+                Dari Rakyat Untuk Rakyat •
+                Dari Rakyat Untuk Rakyat •
+                Dari Rakyat Untuk Rakyat •
+                Dari Rakyat Untuk Rakyat •
+                Dari Rakyat Untuk Rakyat •
+                Dari Rakyat Untuk Rakyat •
+                Dari Rakyat Untuk Rakyat •
+                Dari Rakyat Untuk Rakyat •
+                Dari Rakyat Untuk Rakyat •
+            </div>
+        </div>
+        <div class="scrolling-text-container w-full mx-auto">
+            <div class="scrolling-text-kanan font-sec text-7xl">
+                <!-- Duplikat teks untuk efek seamless -->
+                Nangkap Kambing •
+                Ular Masuk Rumah •
+                Kerbau Masuk Parit •
+                Kude Terlepas •
+                Kucing Atas Pohon •
+                Semue Bombe Padamkan •
+            </div>
+        </div>
+        <button class="btn-red mt-8">Tentang Kami</button>
+    </div>
+
 
     <!-- Komponen tambahan -->
     <x-lokasi />
