@@ -2,10 +2,9 @@
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <!-- Judul -->
-        <div class="text-center mb-12">     
-            <h2 class="text-3xl font-bold text-blue-900 inline-block pb-2 relative ">
+        <div class=" mb-12">     
+            <h2 class="text-5xl font-sec inline-block pb-2 relative ">
                 Berita Terbaru
-                <span class="absolute bottom-0 left-1/4 w-1/2 h-1 bg-red-600 transition"></span>
             </h2>
         </div>
 
@@ -15,7 +14,7 @@
             <a href="{{ route('Layanan') }}" ><div class="bg-white shadow-md hover:shadow-xl transition rounded-lg overflow-hidden">
                 <div class="h-48 bg-cover bg-center" style="background-image: url('/assets/images/nyiram.jpg');"></div>
                 <div class="p-6">
-                    <h3 class="text-xl font-semibold text-red-700 mb-2">Pemadaman di Karhutla</h3>
+                    <h3 class="text-xl font-semibold mb-2">Pemadaman di Karhutla</h3>
                     <p class="text-gray-700">18 Febuari 2024.</p>
                 </div>
             </div>  </a>
@@ -25,7 +24,7 @@
                <a href="{{ route('Layanan') }}" > <div class="bg-white shadow-md hover:shadow-xl transition rounded-lg overflow-hidden">
                 <div class="h-48 bg-cover bg-center" style="background-image: url('/assets/images/rescue sarang tawon 2.jpg');"></div>
                 <div class="p-6">
-                    <h3 class="text-xl font-semibold text-red-700 mb-2">Rescue Sarang Tawon</h3>
+                    <h3 class="text-xl font-semibold  mb-2">Rescue Sarang Tawon</h3>
                     <p class="text-gray-700">23 Desember 2024.</p>
                 </div>
             </div> </a>
@@ -35,7 +34,7 @@
             <div class="bg-white shadow-md hover:shadow-xl transition rounded-lg overflow-hidden">
                 <div class="h-48 bg-cover bg-center" style="background-image: url('/assets/images/pembersihan saluran air 3.jpg');"></div>
                 <div class="p-6">
-                    <h3 class="text-xl font-semibold text-red-700 mb-2">Pembersihan Saluran Air</h3>
+                    <h3 class="text-xl font-semibold  mb-2">Pembersihan Saluran Air</h3>
                     <p class="text-gray-700">8 Desember 2024.</p>
                 </div>
             </div></a>
