@@ -83,7 +83,6 @@ Mewujudkan Kota Baru yang aman dan tangguh terhadap kebakaran dan bencana•
                     Dari Rakyat Untuk Rakyat •
                     Dari Rakyat Untuk Rakyat •
                 </div>
->>>>>>> 9f0e1ba7e760943e3564379d6cbd24456e194eef
             </div>
             <div class="scrolling-text-container w-full mx-auto">
                 <div class="scrolling-text-kanan font-sec text-7xl">
