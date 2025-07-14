@@ -12,7 +12,24 @@
         </div>
         <div class="max-w-7xl mx-auto">
             <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-8">
-            
+            <div class="space-y-4">
+                    <h3 class="text-xl font-semibold text-gray-800">Informasi Kontak</h3>
+                    <p class="flex items-center gap-2"><span><i class="ri-map-pin-line"></i></span> Jl. Prof. M. Yamin - Jl.
+                        Kurnia</p>
+                    <p class="flex items-center gap-2"><span><i class="ri-alarm-warning-line"></i></span> Nomor Darurat: <a
+                            href="tel:+62
+                                        831-2607-5724">+62
+                            831-2607-5724</a> <B>Fikri Adriansyah</B></p>
+                    <p class="flex items-center gap-2"><span><i class="ri-customer-service-2-line"></i></span> Kantor:
+                        <a href="tel:+62
+                                812-5672-0395">+62
+                            812-5672-0395</a> <b>Mujahidah</b>
+                    </p>
+                    <p class="flex items-center gap-2"><span><i class="ri-instagram-line"></i></span>
+                        <a href="https://www.instagram.com/kurniakobarofficial/">@kurniakobarofficial</a>
+
+                    </p>
+                </div>
                 <div>
                     <h3 class="text-lg font-semibold mb-4">Kirim Pesan</h3>
 
@@ -58,24 +75,7 @@
                         @endif
                     </form>
                 </div>
-                <div class="space-y-4">
-                    <h3 class="text-xl font-semibold text-gray-800">Informasi Kontak</h3>
-                    <p class="flex items-center gap-2"><span><i class="ri-map-pin-line"></i></span> Jl. Prof. M. Yamin - Jl.
-                        Kurnia</p>
-                    <p class="flex items-center gap-2"><span><i class="ri-alarm-warning-line"></i></span> Nomor Darurat: <a
-                            href="tel:+62
-                                        831-2607-5724">+62
-                            831-2607-5724</a> <B>Fikri Adriansyah</B></p>
-                    <p class="flex items-center gap-2"><span><i class="ri-customer-service-2-line"></i></span> Kantor:
-                        <a href="tel:+62
-                                812-5672-0395">+62
-                            812-5672-0395</a> <b>Mujahidah</b>
-                    </p>
-                    <p class="flex items-center gap-2"><span><i class="ri-instagram-line"></i></span>
-                        <a href="https://www.instagram.com/kurniakobarofficial/">@kurniakobarofficial</a>
-
-                    </p>
-                </div>
+              
             </div>
         </div>
     </section>

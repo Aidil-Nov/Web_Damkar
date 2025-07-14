@@ -41,11 +41,11 @@
 
 .scrolling-text-kanan {
     display: inline-block;
-    animation: scrollHorizontalKanan 20s linear infinite;
+    animation: scrollHorizontalKanan 50s linear infinite;
 }
 .scrolling-text-kiri {
     display: inline-block;
-    animation: scrollHorizontalKiri 20s linear infinite;
+    animation: scrollHorizontalKiri 50s linear infinite;
 }
 
 .scrolling-text:hover {
