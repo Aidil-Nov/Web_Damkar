@@ -1,4 +1,4 @@
-<header id="main-header" class="py-4 fixed z-[1000] w-full transition-all duration-500 ease-in-out top-0">
+<header id="main-header" class="py-4 fixed z-[1000] w-full transition-all duration-500 ease-in-out top-0 ">
     <div class="absolute flex flex-wrap items-center justify-between w-full mt-8">
 
         <div class="flex items-center left-4 sm:left-4 md:left-7 lg:left-15 absolute">
@@ -6,34 +6,34 @@
         </div>
 
 
-        <nav class="hidden md:block rounded-full px-6 py-3 fixed top-8 left-1/2 -translate-x-1/2 bg-white shadow">
-            <ul class="flex items-center text-sm ">
+        <nav class="hidden md:block rounded-full px-6 py-3 fixed top-8 left-1/2 -translate-x-1/2 bg-white shadow ">
+            <ul class="flex items-center text-sm gap-2">
                 <li>
-                    <a href="{{ route('Home') }}" class="px-4 py-2 rounded-full hover:bg-red-700 hover:text-white transition 
+                    <a href="{{ route('Home') }}" class="px-4 py-2 rounded-full  hover:border-red-700 hover:border-[1px] transition 
                       {{ request()->routeIs('Home') ? 'bg-red-600 text-white' : '' }}">
                         Beranda
                     </a>
                 </li>
                 <li>
-                    <a href="{{ route('Layanan') }}" class="px-4 py-2 rounded-full hover:bg-red-700 hover:text-white transition
+                    <a href="{{ route('Layanan') }}" class="px-4 py-2 rounded-full hover:border-red-700 hover:border-[1px] transition
                       {{ request()->routeIs('Layanan') ? 'bg-red-600 text-white' : '' }}">
                         Layanan
                     </a>
                 </li>
                 <li>
-                    <a href="{{ route('Lokasi') }}" class="px-4 py-2 rounded-full hover:bg-red-700 hover:text-white transition
+                    <a href="{{ route('Lokasi') }}" class="px-4 py-2 rounded-full  hover:border-red-700 hover:border-[1px] transition
                       {{ request()->routeIs('Lokasi') ? 'bg-red-600 text-white' : '' }}">
                         Lokasi
                     </a>
                 </li>
                 <li>
-                    <a href="{{ route('Galeri') }}" class="px-4 py-2 rounded-full hover:bg-red-700 hover:text-white transition
+                    <a href="{{ route('Galeri') }}" class="px-4 py-2 rounded-full  hover:border-red-700 hover:border-[1px] transition
                       {{ request()->routeIs('Galeri') ? 'bg-red-600 text-white' : '' }}">
                         Galeri
                     </a>
                 </li>
                 <li>
-                    <a href="{{ route('Kontak') }}" class="px-4 py-2 rounded-full hover:bg-red-700 hover:text-white transition
+                    <a href="{{ route('Kontak') }}" class="px-4 py-2 rounded-full  hover:border-red-700 hover:border-[1px] transition
                       {{ request()->routeIs('Kontak') ? 'bg-red-600 text-white' : '' }}">
                         Kontak
                     </a>
@@ -41,13 +41,11 @@
             </ul>
         </nav>
         <div class="flex items-center right-4 absolute sm:right-4 md:right-7 lg:right-15">
-            <button id="searchButton"
-                class="text-red-600 p-2 rounded-full transition duration-300 hover:scale-150">
+            <button id="searchButton" class="text-red-600 p-2 rounded-full transition duration-300 hover:scale-150">
                 <i class="ri-search-line text-2xl"></i>
                 </svg>
             </button>
-            <button id="hamburgerButton"
-                class="md:hidden text-red-600 rounded-full hover:scale-150 transition">
+            <button id="hamburgerButton" class="md:hidden text-red-600 rounded-full hover:scale-150 transition">
                 <i class="ri-menu-line text-2xl"></i>
             </button>
 
@@ -62,12 +60,15 @@
 
 
                     <div class="relative px-6">
-                        <input type="text" placeholder="Cari"
-                            class="w-full px-4 py-4 bg-gray-200 border border-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-black">
-                        <button type="submit"
-                            class="absolute right-8 top-1.5 text-white bg-red-600 rounded-full p-4 px-6 py-3 z-50">
-                            <i class="ri-search-line"></i>
-                        </button>
+                        <form action="POST">
+                            <input type="text" placeholder="Cari"
+                                class="w-full px-4 py-4 bg-gray-200 border border-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-black">
+                            <button type="submit"
+                                class="absolute right-8 top-1.5 text-white bg-red-600 rounded-full p-4 px-6 py-3 z-50">
+                                <i class="ri-search-line"></i>
+                            </button>
+                        </form>
+
                     </div>
                     <div
                         class="p-4 sm:p-6 md:p-8 lg:p-12 flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4">
@@ -90,7 +91,8 @@
 
         <div id="mobileMenu" class="md:hidden fixed top-0 bg-white rounded-b-xl shadow-lg p-10 w-full z-[999] hidden">
             <ul class="space-y-3 text-sm font-medium pt-10">
-                <button id="closenavButton" class="md:hidden text-red-600 absolute top-5 right-10 hover:scale-150 transition">
+                <button id="closenavButton"
+                    class="md:hidden text-red-600 absolute top-5 right-10 hover:scale-150 transition">
                     <i class="ri-close-line text-2xl"></i>
                 </button>
                 <li>
