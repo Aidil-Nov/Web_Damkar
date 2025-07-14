@@ -1,5 +1,5 @@
-<section class="bg-white py-16">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+<section class="bg-white py-2">
+    <div class=" mx-auto px-4 sm:px-6 lg:px-8">
 
         <!-- Judul -->
         <div class=" mb-12">     
