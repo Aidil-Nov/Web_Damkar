@@ -28,47 +28,48 @@
             <h2 class="font-sec text-3xl sm:text-4xl md:text-5xl mb-4">Dari Rakyat Untuk Rakyat</h2>
             <p class="font-sec text-sm sm:text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
                 Kami Datang Bukan Sebagai Pahlawan, Tapi Sebagai Saudara.
-Pemadam Kebakaran bukan hanya tugas, ini adalah bentuk cinta kami kepada sesama.
+                Pemadam Kebakaran bukan hanya tugas, ini adalah bentuk cinta kami kepada sesama.
             </p>
         </div>
-
-
     </section>
 
-    <div class="h-64 sm:h-80 md:h-[32rem] bg-cover bg-center m-8 rounded-2xl"
-        style="background-image: url('/assets/images/pemadam.jpg');">
-    </div>
-    <div class="flex flex-wrap items-center justify-center">
-        <div class="scrolling-text-container w-full mx-auto">
-            <div class="scrolling-text-kiri text-lg">
-
-                Dari Rakyat Untuk Rakyat •
-                Dari Rakyat Untuk Rakyat •
-                Dari Rakyat Untuk Rakyat •
-                Dari Rakyat Untuk Rakyat •
-                Dari Rakyat Untuk Rakyat •
-                Dari Rakyat Untuk Rakyat •
-                Dari Rakyat Untuk Rakyat •
-                Dari Rakyat Untuk Rakyat •
-                Dari Rakyat Untuk Rakyat •
-                Dari Rakyat Untuk Rakyat •
-                Dari Rakyat Untuk Rakyat •
-            </div>
+    <section class="mt-8 mb-8">
+        <div class="h-64 sm:h-80 md:h-[32rem] bg-cover bg-center m-8 rounded-2xl"
+            style="background-image: url('/assets/images/pemadam.jpg');">
         </div>
-        <div class="scrolling-text-container w-full mx-auto">
-            <div class="scrolling-text-kanan font-sec text-7xl">
+        <div class="flex flex-wrap items-center justify-center">
+            <div class="scrolling-text-container w-full mx-auto">
+                <div class="scrolling-text-kiri text-lg">
 
-                Nangkap Kambing •
-                Ular Masuk Rumah •
-                Kerbau Masuk Parit •
-                Kude Terlepas •
-                Kucing Atas Pohon •
-                Semue Bombe Padamkan •
+                    Dari Rakyat Untuk Rakyat •
+                    Dari Rakyat Untuk Rakyat •
+                    Dari Rakyat Untuk Rakyat •
+                    Dari Rakyat Untuk Rakyat •
+                    Dari Rakyat Untuk Rakyat •
+                    Dari Rakyat Untuk Rakyat •
+                    Dari Rakyat Untuk Rakyat •
+                    Dari Rakyat Untuk Rakyat •
+                    Dari Rakyat Untuk Rakyat •
+                    Dari Rakyat Untuk Rakyat •
+                    Dari Rakyat Untuk Rakyat •
+                </div>
             </div>
+            <div class="scrolling-text-container w-full mx-auto">
+                <div class="scrolling-text-kanan font-sec text-7xl">
+                    Nangkap Kambing •
+                    Ular Masuk Rumah •
+                    Kerbau Masuk Parit •
+                    Kude Terlepas •
+                    Kucing Atas Pohon •
+                    Semue Bombe Padamkan •
+                </div>
+            </div>
+            <button class="btn-red mt-8">
+                <a href="#tentang">Tentang Kami</a>
+            </button>
         </div>
-        <button class="btn-red mt-8">
-            <a href="#tentang">Tentang Kami</a></button>
-    </div>
+
+    </section>
 
     <x-lokasi />
     <x-berita />
