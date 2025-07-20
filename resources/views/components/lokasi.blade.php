@@ -1,4 +1,4 @@
-<section class="m-8 sm:m-8 md:m-8 lg:m-8">
+<section class="m-8 mb-8 sm:m-8 md:m-8 lg:m-8">
     <div class="mx-auto">
         <div class="grid md:grid-cols-2 gap-4">
             <!-- Pos Pusat -->
