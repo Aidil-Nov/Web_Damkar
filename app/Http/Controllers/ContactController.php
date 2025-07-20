@@ -9,7 +9,7 @@ class ContactController extends Controller
 {
     public function create()
     {
-        return view('kontak.kontak');
+        return view('kontak');
     }
 
     public function store(Request $request)

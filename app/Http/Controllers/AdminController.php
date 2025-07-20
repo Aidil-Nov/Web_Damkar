@@ -61,6 +61,7 @@ public function storeBerita(Request $request)
         $gambarPath = $request->file('gambar')->store('images', 'public');
     }
 
+<<<<<<< HEAD
     // Menyimpan berita ke database
     Berita::create([
         'judul' => $request->judul,
@@ -90,6 +91,12 @@ public function updateBerita(Request $request, $id)
         }
         $gambarPath = $request->file('gambar')->store('images', 'public');
         $news->gambar = $gambarPath;
+=======
+    public function contactMessages()
+    {
+        $messages = ContactMessage::latest()->get(); // atau ->paginate(20)
+        return view('admin.contact_messages', compact('messages'));
+>>>>>>> origin/aidil
     }
 
     // Update berita

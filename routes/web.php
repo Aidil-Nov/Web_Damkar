@@ -3,7 +3,11 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ContactMessageController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\AuthController;
 
+Route::get('/login', [AuthController::class, 'showLogin'])->name('login');
+Route::post('/login', [AuthController::class, 'login']);
+Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
 // Hanya untuk admin yang sudah login
 Route::middleware(['auth', 'admin'])->group(function () {
@@ -16,7 +20,6 @@ Route::middleware(['auth', 'admin'])->group(function () {
 Route::middleware(['auth', 'admin'])->group(function () {
     Route::get('/admin/dashboard', [AdminController::class, 'index']);
 });
-
 
 
 Route::get('/', function () {
