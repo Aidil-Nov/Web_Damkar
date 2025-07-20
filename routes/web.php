@@ -11,12 +11,11 @@ Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
 // Hanya untuk admin yang sudah login
 Route::middleware(['auth', 'admin'])->group(function () {
+    // Semua rute ini hanya bisa diakses oleh admin yang sudah login
     Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])->name('admin.dashboard');
-    Route::get('/admin/contact-messages', [AdminController::class, 'contactMessages'])->name('admin.contact');
-    Route::get('/admin/news', [AdminController::class, 'newsIndex'])->name('admin.news.index');
-    Route::get('/admin/gallery', [AdminController::class, 'galleryIndex'])->name('admin.gallery.index');
-    Route::get('/admin/visitors', [AdminController::class, 'visitorIndex'])->name('admin.visitors.index');
+    // Rute lainnya...
 });
+
 Route::middleware(['auth', 'admin'])->group(function () {
     Route::get('/admin/dashboard', [AdminController::class, 'index']);
 });
