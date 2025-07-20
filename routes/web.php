@@ -2,6 +2,22 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ContactMessageController;
+use App\Http\Controllers\AdminController;
+
+
+// Hanya untuk admin yang sudah login
+Route::middleware(['auth', 'admin'])->group(function () {
+    Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])->name('admin.dashboard');
+    Route::get('/admin/contact-messages', [AdminController::class, 'contactMessages'])->name('admin.contact');
+    Route::get('/admin/news', [AdminController::class, 'newsIndex'])->name('admin.news.index');
+    Route::get('/admin/gallery', [AdminController::class, 'galleryIndex'])->name('admin.gallery.index');
+    Route::get('/admin/visitors', [AdminController::class, 'visitorIndex'])->name('admin.visitors.index');
+});
+Route::middleware(['auth', 'admin'])->group(function () {
+    Route::get('/admin/dashboard', [AdminController::class, 'index']);
+});
+
+
 
 Route::get('/', function () {
     return view('home');
@@ -25,14 +41,13 @@ Route::get('/galeri', function () {
 
 Route::get('/kontak', function () {
     return view('kontak');
-})->name('Kontak');
+})->name('kontak');
 
-Route::get('/kontak/create', [ContactController::class, 'create'])->name('kontak.create');
-Route::post('/kontak/store', [ContactController::class, 'store'])->name('kontak.store');
+// Tampilkan halaman kontak
+Route::get('/kontak', [ContactController::class, 'create'])->name('kontak');
 
-
-// Untuk pengguna mengirim pesan
-Route::post('/contact', [ContactMessageController::class, 'store'])->name('contact.store');
+// Simpan pesan kontak
+Route::post('/kontak', [ContactController::class, 'store'])->name('kontak.store');
 
 // Untuk admin melihat pesan
 Route::middleware(['auth', 'admin'])->group(function () {
