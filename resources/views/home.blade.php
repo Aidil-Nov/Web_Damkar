@@ -17,7 +17,7 @@
             <p class="text-sm sm:text-base md:text-lg max-w-2xl mx-auto mb-8">
                 Posko Damkar Kurnia Kobar siap 24 jam setiap hari.
             </p>
-            <a href="{{ route('Kontak') }}" class="btn-red">
+            <a href="{{ route('kontak') }}" class="btn-red">
                 Hubungi Kami
             </a>
         </div>
