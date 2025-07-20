@@ -20,6 +20,9 @@ Route::middleware(['auth', 'admin'])->group(function () {
     Route::get('/admin/dashboard', [AdminController::class, 'index']);
 });
 
+Route::get('/admin/dashboard', [AdminController::class, 'index'])
+    ->name('admin.dashboard')
+    ->middleware(['auth', 'admin']);
 
 Route::get('/', function () {
     return view('home');

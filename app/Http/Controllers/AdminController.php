@@ -2,121 +2,126 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Controllers\Controller;
 use App\Models\Berita;
 use App\Models\Galeri;
-use App\Models\PesanKontak;
 use App\Models\Pengunjung;
+use App\Models\ContactMessage;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class AdminController extends Controller
 {
-public function dashboard()
-{
-    $totalBerita = Berita::count();
-    $totalGaleri = Galeri::count();
-    $totalPengunjung = Pengunjung::count();
-    
-    return view('admin.dashboard', compact('totalBerita', 'totalGaleri', 'totalPengunjung'));
-}
+    public function dashboard()
+    {
+        $totalBerita = Berita::count();
+        $totalGaleri = Galeri::count();
+        $totalPengunjung = Pengunjung::count();
 
-// AdminController.php
+        return view('admin.dashboard', compact('totalBerita', 'totalGaleri', 'totalPengunjung'));
+    }
 
+    // AdminController.php
 
+    public function index()
+    {
+        return view('admin.dashboard');
+    }
 
     // Menampilkan Daftar Berita
 // AdminController.php
-public function newsIndex()
-{
-    $news = Berita::all();
-    return view('admin.news.index', compact('news'));
-}
+    public function newsIndex()
+    {
+        $news = Berita::all();
+        return view('admin.news.index', compact('news'));
+    }
 
     // Menampilkan Daftar Galeri
 // AdminController.php
-public function galleryIndex()
-{
-    $gallery = Galeri::all();
-    return view('admin.gallery.index', compact('gallery'));
-}
-
-
-// AdminController.php
-public function visitorIndex()
-{
-    $visitors = Pengunjung::all();
-    return view('admin.visitors.index', compact('visitors'));
-}
-
-public function storeBerita(Request $request)
-{
-    // Validasi input
-    $request->validate([
-        'judul' => 'required|string|max:255',
-        'konten' => 'required|string',
-        'gambar' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048', // Maksimal 2MB
-    ]);
-
-    // Proses gambar jika ada
-    if ($request->hasFile('gambar')) {
-        $gambarPath = $request->file('gambar')->store('images', 'public');
+    public function galleryIndex()
+    {
+        $gallery = Galeri::all();
+        return view('admin.gallery.index', compact('gallery'));
     }
 
-    // Menyimpan berita ke database
-    Berita::create([
-        'judul' => $request->judul,
-        'konten' => $request->konten,
-        'gambar' => $gambarPath ?? null, // Menggunakan gambar jika ada
-    ]);
 
-    return redirect()->route('admin.news.index')->with('success', 'Berita berhasil ditambahkan');
-}
+    // AdminController.php
+    public function visitorIndex()
+    {
+        $visitors = Pengunjung::all();
+        return view('admin.visitors.index', compact('visitors'));
+    }
 
-public function updateBerita(Request $request, $id)
-{
-    // Validasi input
-    $request->validate([
-        'judul' => 'required|string|max:255',
-        'konten' => 'required|string',
-        'gambar' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
-    ]);
+    public function storeBerita(Request $request)
+    {
+        // Validasi input
+        $request->validate([
+            'judul' => 'required|string|max:255',
+            'konten' => 'required|string',
+            'gambar' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048', // Maksimal 2MB
+        ]);
 
-    $news = Berita::findOrFail($id);
-
-    // Proses gambar jika ada
-    if ($request->hasFile('gambar')) {
-        // Hapus gambar lama
-        if ($news->gambar) {
-            Storage::delete('public/' . $news->gambar);
+        // Proses gambar jika ada
+        if ($request->hasFile('gambar')) {
+            $gambarPath = $request->file('gambar')->store('images', 'public');
         }
-        $gambarPath = $request->file('gambar')->store('images', 'public');
-        $news->gambar = $gambarPath;
+
+        // Menyimpan berita ke database
+        Berita::create([
+            'judul' => $request->judul,
+            'konten' => $request->konten,
+            'gambar' => $gambarPath ?? null, // Menggunakan gambar jika ada
+        ]);
+
+        return redirect()->route('admin.news.index')->with('success', 'Berita berhasil ditambahkan');
     }
 
-    // Update berita
-    $news->update([
-        'judul' => $request->judul,
-        'konten' => $request->konten,
-    ]);
+    public function updateBerita(Request $request, $id)
+    {
+        // Validasi input
+        $request->validate([
+            'judul' => 'required|string|max:255',
+            'konten' => 'required|string',
+            'gambar' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+        ]);
 
-    return redirect()->route('admin.news.index')->with('success', 'Berita berhasil diperbarui');
-}
+        $news = Berita::findOrFail($id);
 
-public function storeGaleri(Request $request)
-{
-    $request->validate([
-        'judul' => 'required|string|max:255',
-        'gambar' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048', // Maksimal 2MB
-    ]);
+        // Proses gambar jika ada
+        if ($request->hasFile('gambar')) {
+            // Hapus gambar lama
+            if ($news->gambar) {
+                Storage::delete('public/' . $news->gambar);
+            }
+            $gambarPath = $request->file('gambar')->store('images', 'public');
+            $news->gambar = $gambarPath;
+        }
 
-    $gambarPath = $request->file('gambar')->store('images', 'public');
+        // Update berita
+        $news->update([
+            'judul' => $request->judul,
+            'konten' => $request->konten,
+        ]);
 
-    Galeri::create([
-        'judul' => $request->judul,
-        'gambar' => $gambarPath,
-    ]);
+        return redirect()->route('admin.news.index')->with('success', 'Berita berhasil diperbarui');
+    }
 
-    return redirect()->route('admin.gallery.index')->with('success', 'Galeri berhasil ditambahkan');
-}
+    public function storeGaleri(Request $request)
+    {
+        $request->validate([
+            'judul' => 'required|string|max:255',
+            'gambar' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048', // Maksimal 2MB
+        ]);
+
+        $gambarPath = $request->file('gambar')->store('images', 'public');
+
+        Galeri::create([
+            'judul' => $request->judul,
+            'gambar' => $gambarPath,
+        ]);
+
+        return redirect()->route('admin.gallery.index')->with('success', 'Galeri berhasil ditambahkan');
+    }
 
 
 }
