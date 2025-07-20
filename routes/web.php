@@ -9,16 +9,63 @@ Route::get('/login', [AuthController::class, 'showLogin'])->name('login');
 Route::post('/login', [AuthController::class, 'login']);
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
-// Hanya untuk admin yang sudah login
 Route::middleware(['auth', 'admin'])->group(function () {
-    // Semua rute ini hanya bisa diakses oleh admin yang sudah login
-    Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])->name('admin.dashboard');
-    // Rute lainnya...
+    Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])
+        ->name('admin.dashboard');
+
+    // Contact Messages
+    Route::get('/admin/contact-messages', [AdminController::class, 'ContactMessages'])
+        ->name('admin.contact');
+
+    // News (Berita)
+    Route::get('/admin/news', [AdminController::class, 'newsIndex'])
+        ->name('admin.news.index');
+    Route::get('/admin/news/create', [AdminController::class, 'createBerita'])
+        ->name('admin.news.create');   // <-- yang belum ada
+    Route::post('/admin/news', [AdminController::class, 'storeBerita'])
+        ->name('admin.news.store');
+    Route::get('/admin/news/{id}/edit', [AdminController::class, 'editBerita'])
+        ->name('admin.news.edit');
+    Route::patch('/admin/news/{id}', [AdminController::class, 'updateBerita'])
+        ->name('admin.news.update');
+    Route::delete('/admin/news/{id}', [AdminController::class, 'destroyBerita'])
+        ->name('admin.news.destroy');
+
+    // Gallery
+    Route::get('/admin/gallery', [AdminController::class, 'galleryIndex'])
+        ->name('admin.gallery.index');
+    Route::get('/admin/gallery/create', [AdminController::class, 'createGallery'])
+        ->name('admin.gallery.create');
+    Route::post('/admin/gallery', [AdminController::class, 'storeGaleri'])
+        ->name('admin.gallery.store');
+    Route::delete('/admin/gallery/{id}', [AdminController::class, 'destroyGaleri'])
+        ->name('admin.gallery.destroy');
+
+    // Visitors
+    Route::get('/admin/visitors', [AdminController::class, 'visitorIndex'])
+        ->name('admin.visitors.index');
 });
 
-Route::middleware(['auth', 'admin'])->group(function () {
-    Route::get('/admin/dashboard', [AdminController::class, 'index']);
-});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Route::get('/admin/dashboard', [AdminController::class, 'index'])
     ->name('admin.dashboard')
@@ -54,7 +101,3 @@ Route::get('/kontak', [ContactController::class, 'create'])->name('kontak');
 // Simpan pesan kontak
 Route::post('/kontak', [ContactController::class, 'store'])->name('kontak.store');
 
-// Untuk admin melihat pesan
-Route::middleware(['auth', 'admin'])->group(function () {
-    Route::get('/admin/contact-messages', [ContactMessageController::class, 'index'])->name('admin.contact');
-});

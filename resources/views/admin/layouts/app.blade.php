@@ -58,11 +58,10 @@
 <div class="sidebar">
     <h3 class="text-center text-white">Admin Panel</h3>
     <a href="{{ route('admin.dashboard') }}">Dashboard</a>
-    <a href="{{ route('admin.berita.index') }}">Kelola Berita</a>
-    <a href="{{ route('admin.galeri.index') }}">Kelola Galeri</a>
-    <a href="{{ route('admin.pesan-kontak') }}">Pesan Kontak</a>
-    <a href="{{ route('admin.pengunjung.index') }}">Data Pengunjung</a>
-    <!-- Add more sidebar links as needed -->
+    <a href="{{ route('admin.contact') }}">Pesan Kontak</a>
+    <a href="{{ route('admin.news.index') }}">Berita</a>
+    <a href="{{ route('admin.gallery.index') }}">Gallery</a>
+    <a href="{{ route('admin.visitors.index') }}">Pengunjung</a>
 </div>
 
 <!-- Main Content -->
