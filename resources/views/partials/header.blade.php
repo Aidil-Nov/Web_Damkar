@@ -15,6 +15,12 @@
                     </a>
                 </li>
                 <li>
+                    <a href="{{ route('Berita') }}" class="px-4 py-2 rounded-full  hover:border-red-700 hover:border-[1px] transition 
+                      {{ request()->routeIs('Berita') ? 'bg-red-600 text-white' : '' }}">
+                        Berita
+                    </a>
+                </li>
+                <li>
                     <a href="{{ route('Layanan') }}" class="px-4 py-2 rounded-full hover:border-red-700 hover:border-[1px] transition
                       {{ request()->routeIs('Layanan') ? 'bg-red-600 text-white' : '' }}">
                         Layanan
