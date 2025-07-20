@@ -17,7 +17,7 @@ class AdminController extends Controller
 
     public function contactMessages()
     {
-        $messages = ContactMessage::latest()->get();
+        $messages = ContactMessage::latest()->get(); // atau ->paginate(20)
         return view('admin.contact_messages', compact('messages'));
     }
 
