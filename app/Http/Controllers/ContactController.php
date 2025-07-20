@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\ContactMessage;
 use Illuminate\Http\Request;
 
 class ContactController extends Controller
@@ -15,10 +16,18 @@ class ContactController extends Controller
     {
         $request->validate([
             'name' => 'required|string|max:100',
-            'email' => 'required|email|unique:users,email',
-            'subjek' => 'required|string|max:150',
-            'message' => 'required|string|max:150',
+            'email' => 'required|email|max:255',
+            'phone' => 'nullable|string|max:20',
+            'message' => 'required|string|max:1000',
         ]);
-        return redirect()->back()->with('success', 'Pesan Berhasil Di Kirim Ke Posko');
+
+        ContactMessage::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'phone' => $request->phone,
+            'message' => $request->message,
+        ]);
+
+        return redirect()->back()->with('success', 'Pesan Berhasil Dikirim ke Posko');
     }
 }
