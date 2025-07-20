@@ -3,124 +3,66 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use App\Models\Berita;
-use App\Models\Galeri;
-use App\Models\Pengunjung;
+use App\Models\Gallery;
+use App\Models\News;
 use App\Models\ContactMessage;
-use Illuminate\Http\Request;
+use App\Models\VisitorStatistic;
 use Illuminate\Support\Facades\Storage;
 
 class AdminController extends Controller
 {
-    public function dashboard()
-    {
-        $totalBerita = Berita::count();
-        $totalGaleri = Galeri::count();
-        $totalPengunjung = Pengunjung::count();
-
-        return view('admin.dashboard', compact('totalBerita', 'totalGaleri', 'totalPengunjung'));
-    }
-
-    // AdminController.php
-
     public function index()
     {
         return view('admin.dashboard');
     }
 
-    // Menampilkan Daftar Berita
-// AdminController.php
+    public function contactMessages()
+    {
+        $messages = ContactMessage::latest()->get();
+        return view('admin.contact_messages', compact('messages'));
+    }
+
     public function newsIndex()
     {
-        $news = Berita::all();
+        $news = News::latest()->get();
         return view('admin.news.index', compact('news'));
     }
+    public function createBerita()
+    {
+        return view('admin.news.create');
+    }
 
-    // Menampilkan Daftar Galeri
-// AdminController.php
+    public function editBerita($id)
+    {
+        $news = News::findOrFail($id);
+        return view('admin.news.edit', compact('news'));
+    }
+
+    public function destroyBerita($id)
+    {
+        News::findOrFail($id)->delete();
+        return redirect()->route('admin.news.index')->with('success', 'Berita dihapus');
+    }
+    public function destroyGaleri($id)
+    {
+        $galeri = Galeri::findOrFail($id);
+        if ($galeri->gambar) {
+            Storage::delete('public/' . $galeri->gambar);
+        }
+        $galeri->delete();
+        return redirect()->route('admin.gallery.index')->with('success', 'Galeri dihapus');
+    }
+
     public function galleryIndex()
     {
-        $gallery = Galeri::all();
-        return view('admin.gallery.index', compact('gallery'));
+        $galleries = Gallery::latest()->get();
+        return view('admin.gallery.index', compact('galleries'));
     }
 
-
-    // AdminController.php
     public function visitorIndex()
     {
-        $visitors = Pengunjung::all();
+        $visitors = VisitorStatistic::latest()->get();
         return view('admin.visitors.index', compact('visitors'));
-    }
-
-    public function storeBerita(Request $request)
-    {
-        // Validasi input
-        $request->validate([
-            'judul' => 'required|string|max:255',
-            'konten' => 'required|string',
-            'gambar' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048', // Maksimal 2MB
-        ]);
-
-        // Proses gambar jika ada
-        if ($request->hasFile('gambar')) {
-            $gambarPath = $request->file('gambar')->store('images', 'public');
-        }
-
-        // Menyimpan berita ke database
-        Berita::create([
-            'judul' => $request->judul,
-            'konten' => $request->konten,
-            'gambar' => $gambarPath ?? null, // Menggunakan gambar jika ada
-        ]);
-
-        return redirect()->route('admin.news.index')->with('success', 'Berita berhasil ditambahkan');
-    }
-
-    public function updateBerita(Request $request, $id)
-    {
-        // Validasi input
-        $request->validate([
-            'judul' => 'required|string|max:255',
-            'konten' => 'required|string',
-            'gambar' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
-        ]);
-
-        $news = Berita::findOrFail($id);
-
-        // Proses gambar jika ada
-        if ($request->hasFile('gambar')) {
-            // Hapus gambar lama
-            if ($news->gambar) {
-                Storage::delete('public/' . $news->gambar);
-            }
-            $gambarPath = $request->file('gambar')->store('images', 'public');
-            $news->gambar = $gambarPath;
-        }
-
-        // Update berita
-        $news->update([
-            'judul' => $request->judul,
-            'konten' => $request->konten,
-        ]);
-
-        return redirect()->route('admin.news.index')->with('success', 'Berita berhasil diperbarui');
-    }
-
-    public function storeGaleri(Request $request)
-    {
-        $request->validate([
-            'judul' => 'required|string|max:255',
-            'gambar' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048', // Maksimal 2MB
-        ]);
-
-        $gambarPath = $request->file('gambar')->store('images', 'public');
-
-        Galeri::create([
-            'judul' => $request->judul,
-            'gambar' => $gambarPath,
-        ]);
-
-        return redirect()->route('admin.gallery.index')->with('success', 'Galeri berhasil ditambahkan');
     }
 
 
