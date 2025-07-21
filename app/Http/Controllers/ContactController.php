@@ -2,14 +2,20 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Controllers\Controller;
 use App\Models\ContactMessage;
 use Illuminate\Http\Request;
 
 class ContactController extends Controller
 {
+     /**
+     * Show the contact form.
+     *
+     * @return \Illuminate\View\View
+     */
     public function create()
     {
-        return view('kontak');
+        return view('kontak');  // This refers to the kontak.blade.php view
     }
 
     public function store(Request $request)

@@ -14,7 +14,7 @@ return new class extends Migration {
             $table->id();
             $table->string('title');
             $table->text('content');
-            $table->string('author');
+            $table->string('author')->nullable()->change();
             $table->timestamp('published_at')->nullable();
             $table->boolean('status')->default(1); // 1 = Active, 0 = Inactive
             $table->timestamps();

@@ -1,41 +1,35 @@
-@extends('layouts.admin') {{-- pastikan layout ini sesuai dengan projectmu --}}
+@extends('admin.layouts.app') {{-- pastikan layout ini sesuai dengan projectmu --}}
 
 @section('title', 'Dashboard Admin')
 
 @section('content')
-<div class="container mt-4">
-    <h1 class="mb-4">Dashboard Admin</h1>
+    <div class="container mx-auto mt-8 px-4">
+        <h1 class="text-3xl font-semibold text-gray-800 mb-6">Dashboard Admin</h1>
 
-    <div class="row">
-        <!-- Kartu Jumlah Pengguna -->
-        <div class="col-md-4">
-            <div class="card text-white bg-primary mb-3">
-                <div class="card-body">
-                    <h5 class="card-title">Total Pengguna</h5>
-                    <p class="card-text fs-4">{{ $totalUsers ?? '0' }}</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+            <!-- Kartu Jumlah Pengguna -->
+            <div class="bg-blue-500 text-white rounded-lg shadow-lg">
+                <div class="p-6">
+                    <h5 class="text-xl font-semibold">Total Pengguna</h5>
+                    <p class="text-4xl mt-2">{{ $totalUsers ?? '0' }}</p>
                 </div>
             </div>
-        </div>
 
-        <!-- Kartu Jumlah Data -->
-        <div class="col-md-4">
-            <div class="card text-white bg-success mb-3">
-                <div class="card-body">
-                    <h5 class="card-title">Total Data</h5>
-                    <p class="card-text fs-4">{{ $totalData ?? '0' }}</p>
+            <!-- Kartu Jumlah Data -->
+            <div class="bg-green-500 text-white rounded-lg shadow-lg">
+                <div class="p-6">
+                    <h5 class="text-xl font-semibold">Total Berita</h5>
+                    <p class="text-4xl mt-2">{{ $totalData ?? '0' }}</p>
                 </div>
             </div>
-        </div>
-
-        <!-- Kartu Lainnya -->
-        <div class="col-md-4">
-            <div class="card text-white bg-warning mb-3">
-                <div class="card-body">
-                    <h5 class="card-title">Notifikasi</h5>
-                    <p class="card-text fs-6">Tidak ada notifikasi baru</p>
+            <div class="bg-red-500 text-white rounded-lg shadow-lg">
+                <div class="p-6">
+                    <h5 class="text-xl font-semibold">Total Gallery</h5>
+                    <p class="text-4xl mt-2">{{ $totalGallery ?? '0' }}</p>
                 </div>
             </div>
+
         </div>
     </div>
-</div>
 @endsection

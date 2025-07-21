@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('admin.layouts.app')
 
 @section('content')
     <div class="mb-4 flex justify-between items-center">
@@ -12,7 +12,12 @@
                 <img src="{{ asset('storage/' . $item->gambar) }}" alt="{{ $item->judul }}" class="w-full h-48 object-cover">
                 <div class="p-4">
                     <h5 class="text-lg font-semibold text-gray-800">{{ $item->judul }}</h5>
-                    <div class="mt-3 flex justify-between">
+                    
+                    @if ($item->deskripsi)
+                        <p class="text-sm text-gray-600 mt-2">{{ $item->deskripsi }}</p>
+                    @endif
+                    
+                    <div class="mt-4 flex justify-between">
                         <a href="{{ route('admin.gallery.edit', $item->id) }}" class="text-yellow-500 hover:text-yellow-700">Edit</a>
                         <form action="{{ route('admin.gallery.destroy', $item->id) }}" method="POST">
                             @csrf
