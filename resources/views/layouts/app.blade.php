@@ -10,7 +10,7 @@
         <script src="//unpkg.com/alpinejs" defer></script>
     </head>
 
-    <body class="font-display h-full bg-no-repeat bg-cover bg-center">
+    <body class="font-display h-full bg-no-repeat bg-cover bg-center  ">
         @include('partials.header')
 
         <main>

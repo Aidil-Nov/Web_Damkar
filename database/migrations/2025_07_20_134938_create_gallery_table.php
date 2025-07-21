@@ -9,13 +9,13 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-    public function up()
+   public function up()
 {
     Schema::create('gallery', function (Blueprint $table) {
         $table->id();
-        $table->string('image'); // Path ke file gambar
-        $table->string('title');
-        $table->text('description')->nullable();
+        $table->string('judul')->nullable();
+        $table->string('gambar');
+        $table->text('deskripsi')->nullable();
         $table->timestamps();
     });
 }

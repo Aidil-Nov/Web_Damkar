@@ -2,10 +2,20 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Gallery extends Model
 {
-    protected $fillable = ['image', 'title', 'description'];
-}
+    use HasFactory;
 
+    // Nama tabel jika berbeda dari default plural
+    protected $table = 'gallery';
+
+    // Kolom yang bisa diisi (mass assignable)
+    protected $fillable = [
+        'judul',
+        'gambar',
+        'deskripsi',
+    ];
+}
