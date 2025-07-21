@@ -103,6 +103,12 @@
                     </a>
                 </li>
                 <li>
+                    <a href="{{ route('berita') }}"
+                        class="block px-4 py-2 rounded-full hover:bg-red-600 shadow hover:text-white {{ request()->routeIs('home') ? 'bg-red-600 text-white ' : '' }}">
+                        Berita
+                    </a>
+                </li>
+                <li>
                     <a href="{{ route('layanan') }}"
                         class="block px-4 py-2 rounded-full hover:bg-red-600 shadow hover:text-white {{ request()->routeIs('layanan') ? 'bg-red-600 text-white' : '' }}">
                         Layanan
@@ -130,3 +136,19 @@
         </div>
 
 </header>
+<script>
+    // Mendapatkan elemen-elemen yang diperlukan
+    const hamburgerButton = document.getElementById('hamburgerButton');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const closeNavButton = document.getElementById('closenavButton');
+
+    // Fungsi untuk menampilkan atau menyembunyikan menu
+    hamburgerButton.addEventListener('click', () => {
+        mobileMenu.classList.remove('hidden'); // Menampilkan menu
+    });
+
+    // Fungsi untuk menutup menu
+    closeNavButton.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden'); // Menyembunyikan menu
+    });
+</script>
